@@ -1,0 +1,18 @@
+:root {
+  --background: #f7f7f5;
+  --foreground: #111111;
+
+  --surface: #ffffff;
+  --surface-soft: #f0f0ed;
+
+  --muted: #737373;
+  --border: #e5e5e5;
+
+  --blue: #2563eb;
+  --green: #16a34a;
+  --orange: #ea580c;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+}
