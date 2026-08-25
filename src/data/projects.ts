@@ -15,13 +15,13 @@ export const projects: Project[] = [
     year: 2026,
 
     problem:
-      "Financial concepts are difficult to understand when presented only through static explanations.",
+      "Financial concepts are often difficult to understand when presented only through static explanations and isolated calculations.",
 
     solution:
-      "Interactive simulations make financial concepts easier to explore and understand.",
+      "WealthPlay turns financial concepts into interactive simulations so users can experiment with saving, investing, inflation, and long-term wealth growth.",
 
     architecture:
-      "Interactive financial models with a web-based interface designed around experimentation.",
+      "A web-based simulation platform with interactive financial models and a responsive interface.",
 
     technologies: [
       "Next.js",
@@ -37,20 +37,15 @@ export const projects: Project[] = [
       "Money River visualization",
     ],
 
-    challenges: [
-      "Making complex financial concepts easy to understand.",
-      "Balancing realistic calculations with simple interaction.",
+    roadmap: [
+      "AI Financial Coach",
+      "Portfolio Optimizer",
+      "Retirement Planner",
     ],
 
     lessons: [
       "Interactive learning is more effective than static explanations.",
-      "Good financial UX requires clarity before complexity.",
-    ],
-
-    futurePlans: [
-      "AI Financial Coach",
-      "Portfolio Optimizer",
-      "Retirement Planner",
+      "Financial UX requires clarity before complexity.",
     ],
 
     featured: true,
@@ -60,9 +55,9 @@ export const projects: Project[] = [
     id: 2,
     slug: "money-river",
     title: "Money River",
-    tagline: "Personal finance simulator built in C++ and Python.",
+    tagline: "Finance simulation implemented in C++ and Python.",
     description:
-      "A finance simulation project exploring cash flow, saving, wealth accumulation and optimized computational implementations.",
+      "A finance simulation project exploring cash flow, saving, wealth accumulation, and computational implementation through C++ and Python.",
 
     category: "Finance",
     status: "Completed",
@@ -70,10 +65,13 @@ export const projects: Project[] = [
     year: 2026,
 
     problem:
-      "Financial simulations can become computationally expensive as scenarios grow more complex.",
+      "Financial simulations become more interesting when the underlying model can be tested across different implementations and performance characteristics.",
 
     solution:
-      "Separate implementations explore the same financial concepts through C++ optimization and Python experimentation.",
+      "Money River explores the same financial concepts through Python experimentation and optimized C++ implementations.",
+
+    architecture:
+      "Simulation models implemented independently in Python and C++ to compare experimentation speed and computational efficiency.",
 
     technologies: [
       "C++",
@@ -85,19 +83,19 @@ export const projects: Project[] = [
     features: [
       "Cash-flow simulation",
       "Wealth modelling",
-      "C++ optimized implementation",
+      "C++ implementation",
       "Python implementation",
     ],
 
-    lessons: [
-      "Performance and experimentation can coexist through different implementations.",
-      "The same model can be expressed effectively across languages.",
+    roadmap: [
+      "Scenario comparison",
+      "Advanced simulation models",
+      "Visualization layer",
     ],
 
-    futurePlans: [
-      "Advanced financial scenarios",
-      "Visualization layer",
-      "Scenario comparison",
+    lessons: [
+      "The same model can be explored effectively across different languages.",
+      "Performance considerations matter when simulations scale.",
     ],
 
     featured: true,
@@ -107,9 +105,9 @@ export const projects: Project[] = [
     id: 3,
     slug: "market-memory",
     title: "Market Memory",
-    tagline: "AI trading journal and market observation system.",
+    tagline: "Digital memory for market research and trading decisions.",
     description:
-      "A trading journal for recording market observations, price snapshots, watchlists, alerts, and trading decisions.",
+      "A trading journal and market observation system for recording market insights, watchlists, alerts, prices, and trading decisions.",
 
     category: "Finance",
     status: "Completed",
@@ -117,43 +115,42 @@ export const projects: Project[] = [
     year: 2026,
 
     problem:
-      "Trading decisions and market observations are easily forgotten when there is no structured memory system.",
+      "Market observations and trading decisions are easily forgotten when research, notes, prices, and decisions are stored across disconnected places.",
 
     solution:
-      "A digital journal captures observations, prices, assets, alerts, and trading reasoning in one place.",
+      "Market Memory centralizes market observations, watchlists, alerts, price information, and trading decisions into one workflow.",
 
     architecture:
-      "React Native frontend connected to a FastAPI backend and Supabase data layer.",
+      "A mobile-first product using a React Native frontend with a FastAPI backend and Supabase data layer.",
 
     technologies: [
       "React Native",
       "TypeScript",
       "FastAPI",
       "Supabase",
-      "Expo",
     ],
 
     features: [
-      "Market observations",
-      "Watchlist",
-      "Price alerts",
       "Trading journal",
-      "Snapshots",
+      "Market observations",
+      "Watchlists",
+      "Price alerts",
+      "Market snapshots",
     ],
 
     challenges: [
-      "Designing an efficient mobile-first workflow.",
+      "Designing a focused mobile-first workflow.",
       "Connecting market data with persistent journal entries.",
     ],
 
     lessons: [
       "Structured memory can improve decision quality.",
-      "A focused mobile workflow can outperform feature-heavy interfaces.",
+      "Focused workflows can outperform feature-heavy interfaces.",
     ],
 
-    futurePlans: [
-      "Advanced market analytics",
-      "AI-assisted observations",
+    roadmap: [
+      "AI-assisted market research",
+      "Advanced analytics",
       "Portfolio intelligence",
     ],
 
@@ -162,100 +159,181 @@ export const projects: Project[] = [
 
   {
     id: 4,
-    slug: "stand-dashboard",
-    title: "Stand Dashboard",
-    tagline: "Digital engineering dashboard for stand-area operations.",
+    slug: "llf-dashboard",
+    title: "LLF Dashboard",
+    tagline: "Digitising plant LLF reporting.",
     description:
-      "A digital system for tracking stand health, component history, line position, entry guides, inventory and maintenance records.",
+      "A plant reporting system that replaces paper-based LLF records with digital entry, shift-wise reporting, and downloadable reports.",
 
-    category: "Mechanical",
-    status: "Building",
-    version: "v0.1",
+    category: "Industrial Software",
+    status: "Completed",
+    version: "v1.0",
     year: 2026,
 
     problem:
-      "Engineering asset information is difficult to manage when operational history and component changes are scattered across systems.",
+      "LLF reporting was being maintained on paper, making data entry, retrieval, and shift-wise reporting slower and harder to manage.",
 
     solution:
-      "A centralized engineering dashboard connects operational status, asset history, component changes and maintenance information.",
+      "The LLF Dashboard converts the paper workflow into a web application where users can enter records, generate shift-wise reports, and download them.",
 
     architecture:
-      "Scalable web application with structured asset records, role-based access and persistent maintenance history.",
+      "Frontend and backend deployed separately, with persistent application data managed through Supabase and the application deployed on Render.",
 
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Python",
-      "Database",
+      "Frontend",
+      "Supabase",
+      "Backend",
+      "Render",
     ],
 
     features: [
-      "Stand status",
-      "Asset history",
-      "Entry guide tracking",
-      "Component history",
-      "Inventory tracking",
+      "Digital LLF entry",
+      "Shift-wise reports",
+      "Downloadable reports",
+      "Admin access",
+      "Operator access",
+      "View-only access",
     ],
 
-    challenges: [
-      "Representing real engineering assets digitally.",
-      "Maintaining accurate historical records.",
+    lessons: [
+      "Digitising an existing paper workflow works best when the digital process remains familiar to operators.",
+      "Role separation is important for operational systems.",
     ],
 
-    futurePlans: [
-      "Digital twin visualization",
-      "Predictive maintenance",
-      "Analytics dashboard",
+    roadmap: [
+      "Operational analytics",
+      "Historical reporting",
+      "Trend analysis",
     ],
 
-    featured: false,
+    featured: true,
   },
 
   {
     id: 5,
-    slug: "how-to-make-babies",
-    title: "How to Make Babies",
-    tagline: "Interactive educational exploration of human reproduction.",
+    slug: "digital-stand-register",
+    title: "Digital Stand Register",
+    tagline: "Digital management of running stands, maintenance, and inventory.",
     description:
-      "An interactive educational project designed to explain human reproduction through visual storytelling and approachable explanations.",
+      "A plant engineering system for monitoring running stands, maintenance status, stand inventory, and operational history, with AI-assisted WhatsApp status updates.",
 
-    category: "Education",
-    status: "Planned",
-    version: "Concept",
+    category: "Manufacturing & Industrial",
+    status: "Completed",
+    version: "v1.0",
     year: 2026,
 
     problem:
-      "Human reproduction is often explained either too technically or without enough visual context.",
+      "Stand status, maintenance information, inventory, and component history needed a structured digital system instead of fragmented operational records.",
 
     solution:
-      "A visual educational experience that explains the biological process progressively.",
+      "The Digital Stand Register centralizes running stand information, maintenance, inventory, operational status, and component history while providing role-based control.",
+
+    architecture:
+      "A web-based operational system with structured stand and asset records, role-based access, inventory information, and an AI-assisted WhatsApp update workflow.",
 
     technologies: [
       "Next.js",
-      "TypeScript",
-      "Interactive UI",
+      "Python",
+      "Supabase",
+      "AI",
+      "WhatsApp",
     ],
 
     features: [
-      "Visual explanations",
-      "Interactive learning",
-      "Step-by-step storytelling",
+      "Running stand monitoring",
+      "Maintenance tracking",
+      "Stand inventory",
+      "AI status updates through WhatsApp",
+      "Operator editing",
+      "Admin master control",
+      "View-only access",
+    ],
+
+    challenges: [
+      "Representing real plant equipment digitally.",
+      "Maintaining accurate operational and historical information.",
+      "Designing permissions around real working roles.",
+    ],
+
+    lessons: [
+      "Industrial software should fit existing operational workflows.",
+      "AI is most useful when it reduces operational friction.",
     ],
 
     roadmap: [
-      "Biology fundamentals",
-      "Interactive diagrams",
-      "Educational simulations",
+      "Digital twin",
+      "Predictive maintenance",
+      "Stand life prediction",
+      "Advanced analytics",
     ],
+
+    featured: true,
   },
 
   {
     id: 6,
-    slug: "risk-analysis-indian-stock-market",
-    title: "Risk Analysis for Indian Stock Market",
-    tagline: "Risk intelligence for Indian equities.",
+    slug: "plant-spare-dashboard",
+    title: "Plant Spare Dashboard",
+    tagline: "Centralised spare monitoring for plant operations.",
     description:
-      "A planned system for analysing risk, market conditions and stock behaviour within the Indian market.",
+      "A spare management system that imports Excel and SAP information, organises equipment hierarchies, tracks quantities and procurement status, and enables vendor-wise analysis.",
+
+    category: "Industrial Software",
+    status: "Completed",
+    version: "v1.0",
+    year: 2026,
+
+    problem:
+      "Plant spare information was distributed across Excel and SAP data, making it difficult to organise equipment hierarchy, procurement state, and vendor information in one view.",
+
+    solution:
+      "The Plant Spare Dashboard imports and structures the data into a searchable hierarchy while exposing quantities, PR, PO, on-order and vendor information.",
+
+    architecture:
+      "An operational dashboard built around structured import pipelines for Excel and SAP-derived information, with planner and admin access.",
+
+    technologies: [
+      "Excel Import",
+      "SAP Data",
+      "Dashboard",
+      "Database",
+    ],
+
+    features: [
+      "Excel import",
+      "SAP data import",
+      "Plant hierarchy",
+      "Department and area classification",
+      "Equipment and sub-equipment classification",
+      "Quantity tracking",
+      "PR tracking",
+      "PO tracking",
+      "Vendor-wise filtering",
+      "Planner access",
+      "Admin master control",
+    ],
+
+    lessons: [
+      "Operational dashboards should turn messy source data into a clear information hierarchy.",
+      "Import automation can remove repetitive manual data preparation.",
+    ],
+
+    roadmap: [
+      "Procurement insights",
+      "Spare risk monitoring",
+      "Consumption analytics",
+    ],
+
+    featured: true,
+  },
+
+  {
+    id: 7,
+    slug: "genetic-lab",
+    title: "Genetic Lab",
+    tagline: "Interactive exploration of genetics and biological systems.",
+    description:
+      "An upcoming interactive project exploring genetics through visual experimentation and simulation.",
 
     category: "Research",
     status: "Planned",
@@ -263,112 +341,69 @@ export const projects: Project[] = [
     year: 2026,
 
     problem:
-      "Investors often have access to data without a structured way to interpret risk.",
+      "Genetics can be difficult to understand when concepts are presented only through static diagrams and terminology.",
 
     solution:
-      "A research-oriented system focused on turning market information into understandable risk signals.",
+      "Genetic Lab will turn biological concepts into interactive experiments and visual simulations.",
 
     technologies: [
-      "Python",
       "AI",
-      "Statistics",
-      "Market Data",
+      "Simulation",
+      "Interactive Web",
     ],
 
     features: [
-      "Risk analysis",
-      "Market conditions",
-      "Stock analysis",
-      "Risk signals",
+      "Interactive experiments",
+      "Visual explanations",
+      "Genetic simulations",
     ],
 
     roadmap: [
-      "Historical analysis",
-      "Risk scoring",
-      "Market regime detection",
-      "Portfolio risk",
-    ],
-  },
-
-  {
-    id: 7,
-    slug: "agentic-ai-indian-stocks",
-    title: "Agentic AI for Indian Stocks",
-    tagline: "Agentic intelligence for Indian market research.",
-    description:
-      "A planned multi-step AI system for researching Indian stocks, combining market information, analysis and structured reasoning.",
-
-    category: "AI",
-    status: "Planned",
-    version: "Concept",
-    year: 2026,
-
-    problem:
-      "Researching companies requires combining multiple sources, metrics and reasoning steps.",
-
-    solution:
-      "An agentic workflow that can break research into specialised tasks and consolidate the results.",
-
-    technologies: [
-      "Python",
-      "AI Agents",
-      "LLMs",
-      "Market Data",
-    ],
-
-    features: [
-      "Agent-based research",
-      "Indian stock analysis",
-      "Multi-step reasoning",
-      "Research summaries",
-    ],
-
-    roadmap: [
-      "Research agents",
-      "Financial analysis agent",
-      "News intelligence",
-      "Decision support",
+      "Genetic experiments",
+      "Interactive models",
+      "Visual learning system",
     ],
   },
 
   {
     id: 8,
-    slug: "native-ai-indian-gk",
-    title: "Native AI",
-    tagline: "General-purpose Indian GK and current-affairs assistant.",
+    slug: "personal-ai-stock-market",
+    title: "Personal AI Stock Market Analyst",
+    tagline: "Reimagining fundamental and technical analysis for everyone.",
     description:
-      "A planned AI system focused on Indian general knowledge, current affairs and everyday research.",
+      "A personal AI system designed to make fundamental and technical stock-market analysis easier to understand by translating complex financial reasoning into clear, explainable insights.",
 
-    category: "AI",
+    category: "AI · Finance",
     status: "Planned",
     version: "Concept",
     year: 2026,
 
     problem:
-      "General-purpose AI does not always provide a focused experience for Indian-specific knowledge and current affairs.",
+      "Fundamental and technical analysis can feel fragmented and overly complex for people trying to understand markets.",
 
     solution:
-      "A specialised assistant designed around Indian context, knowledge and current events.",
+      "The product will combine AI, market data, fundamental analysis, and technical analysis into an explainable workflow designed for both beginners and experienced users.",
 
     technologies: [
-      "Python",
       "AI",
-      "LLMs",
-      "Search",
+      "Python",
+      "Market Data",
     ],
 
     features: [
-      "Indian GK",
-      "Current affairs",
-      "Question answering",
-      "Research assistance",
+      "Fundamental analysis",
+      "Technical analysis",
+      "Explainable market reasoning",
+      "AI-assisted research",
+      "Beginner-friendly insights",
     ],
 
     roadmap: [
-      "Knowledge retrieval",
-      "Current-affairs pipeline",
-      "Indian context layer",
-      "Personal research mode",
+      "Fundamental analysis engine",
+      "Technical analysis engine",
+      "AI research workflow",
+      "Explainable stock reports",
+      "Personal research assistant",
     ],
   },
 ];

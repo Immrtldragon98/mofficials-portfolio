@@ -1,4 +1,7 @@
-export type ProjectStatus = "Completed" | "Building" | "Planned";
+export type ProjectStatus =
+  | "Completed"
+  | "Building"
+  | "Planned";
 
 export type ProjectCategory =
   | "AI"
@@ -6,7 +9,10 @@ export type ProjectCategory =
   | "Software"
   | "Education"
   | "Mechanical"
-  | "Research";
+  | "Research"
+  | "Industrial Software"
+  | "Manufacturing & Industrial"
+  | "AI · Finance";
 
 export interface Project {
   // Identity
