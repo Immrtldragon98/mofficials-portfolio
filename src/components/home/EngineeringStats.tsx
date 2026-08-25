@@ -1,18 +1,23 @@
 import Container from "@/components/layout/Container";
+import {
+  completedProjects,
+  buildingProjects,
+  plannedProjects,
+} from "@/lib/projects";
 
 const stats = [
   {
-    value: "03",
+    value: completedProjects.length.toString().padStart(2, "0"),
     label: "Completed",
     detail: "Products shipped",
   },
   {
-    value: "02",
+    value: buildingProjects.length.toString().padStart(2, "0"),
     label: "Building",
     detail: "Active systems",
   },
   {
-    value: "03",
+    value: plannedProjects.length.toString().padStart(2, "0"),
     label: "Planned",
     detail: "Ideas in queue",
   },

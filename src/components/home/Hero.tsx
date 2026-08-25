@@ -1,16 +1,21 @@
-import Link from "next/link";
 import Button from "@/components/ui/Button";
+import {
+  completedProjects,
+  buildingProjects,
+} from "@/lib/projects";
 
 const areas = [
   {
     number: "01",
     title: "Crypto & Stocks",
-    description: "Market tools, simulations, research and financial systems.",
+    description:
+      "Market tools, simulations, research and financial systems.",
   },
   {
     number: "02",
     title: "AI Systems",
-    description: "AI workflows, intelligent products and agentic systems.",
+    description:
+      "AI workflows, intelligent products and agentic systems.",
   },
   {
     number: "03",
@@ -140,9 +145,13 @@ export default function Hero() {
 
             {/* Studio footer */}
             <div className="grid grid-cols-2 border-t border-white/10">
+
+              {/* Completed */}
               <div className="p-6">
                 <p className="font-mono text-3xl font-bold tracking-[-0.04em]">
-                  03
+                  {completedProjects.length
+                    .toString()
+                    .padStart(2, "0")}
                 </p>
 
                 <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-white/30">
@@ -150,15 +159,19 @@ export default function Hero() {
                 </p>
               </div>
 
+              {/* Building */}
               <div className="border-l border-white/10 p-6">
                 <p className="font-mono text-3xl font-bold tracking-[-0.04em]">
-                  01
+                  {buildingProjects.length
+                    .toString()
+                    .padStart(2, "0")}
                 </p>
 
                 <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-white/30">
                   Building
                 </p>
               </div>
+
             </div>
           </div>
         </div>
@@ -181,6 +194,7 @@ export default function Hero() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

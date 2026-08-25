@@ -327,44 +327,59 @@ export const projects: Project[] = [
     featured: true,
   },
 
-  {
-    id: 7,
-    slug: "genetic-lab",
-    title: "Genetic Lab",
-    tagline: "Interactive exploration of genetics and biological systems.",
-    description:
-      "An upcoming interactive project exploring genetics through visual experimentation and simulation.",
+{
+  id: 7,
+  slug: "dot-space",
+  title: "Dot Space",
+  tagline: "Private digital presence for the people who matter.",
+  description:
+    "A privacy-first presence application designed to help families and close groups stay connected through simple, meaningful digital presence.",
 
-    category: "Research",
-    status: "Planned",
-    version: "Concept",
-    year: 2026,
+  category: "Software",
+  status: "Building",
+  version: "v0.1",
+  year: 2026,
 
-    problem:
-      "Genetics can be difficult to understand when concepts are presented only through static diagrams and terminology.",
+  problem:
+    "Existing communication platforms are often overloaded with feeds, notifications, and social features when people simply want to know whether someone is available or okay.",
 
-    solution:
-      "Genetic Lab will turn biological concepts into interactive experiments and visual simulations.",
+  solution:
+    "Dot Space focuses on lightweight digital presence, allowing trusted people to share their availability and presence without the noise of conventional social platforms.",
 
-    technologies: [
-      "AI",
-      "Simulation",
-      "Interactive Web",
-    ],
+  architecture:
+    "A mobile-first real-time application using React Native, TypeScript, Node.js, Express, PostgreSQL, Redis, and Socket.IO.",
 
-    features: [
-      "Interactive experiments",
-      "Visual explanations",
-      "Genetic simulations",
-    ],
+  technologies: [
+    "React Native",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Redis",
+    "Socket.IO",
+  ],
 
-    roadmap: [
-      "Genetic experiments",
-      "Interactive models",
-      "Visual learning system",
-    ],
-  },
+  features: [
+    "Private presence",
+    "Real-time status",
+    "Trusted groups",
+    "Mobile-first experience",
+  ],
 
+  roadmap: [
+    "Real-time presence engine",
+    "Family spaces",
+    "Privacy controls",
+    "Notification system",
+  ],
+
+  lessons: [
+    "A product can become more useful by deliberately removing unnecessary features.",
+    "Real-time systems require careful separation between state, events, and persistence.",
+  ],
+
+  featured: true,
+},
   {
     id: 8,
     slug: "personal-ai-stock-market",
@@ -374,7 +389,7 @@ export const projects: Project[] = [
       "A personal AI system designed to make fundamental and technical stock-market analysis easier to understand by translating complex financial reasoning into clear, explainable insights.",
 
     category: "AI · Finance",
-    status: "Planned",
+    status: "Building",
     version: "Concept",
     year: 2026,
 
@@ -406,4 +421,125 @@ export const projects: Project[] = [
       "Personal research assistant",
     ],
   },
+{
+  id: 9,
+  slug: "passing-game-mobile",
+  title: "Passing Game Mobile",
+  tagline: "A mobile game built around timing, skill, and interaction.",
+  description:
+    "A mobile gaming experiment focused on simple mechanics, responsive interaction, and progressively challenging gameplay.",
+
+  category: "Software",
+  status: "Planned",
+  version: "Concept",
+  year: 2026,
+
+  problem:
+    "Simple game mechanics can become highly engaging when interaction, timing, progression, and feedback are designed carefully.",
+
+  solution:
+    "Passing Game Mobile will explore a focused mobile gameplay loop with intuitive controls and progressively challenging levels.",
+
+  technologies: [
+    "React Native",
+    "TypeScript",
+    "Game Development",
+  ],
+
+  features: [
+    "Mobile gameplay",
+    "Progressive difficulty",
+    "Score system",
+    "Interactive controls",
+  ],
+
+  roadmap: [
+    "Core gameplay",
+    "Level system",
+    "Scoring",
+    "Mobile deployment",
+  ],
+},
+
+{
+  id: 10,
+  slug: "indian-stock-risk-model",
+  title: "Indian Stock Risk Model",
+  tagline: "Understanding risk across Indian equities.",
+  description:
+    "A quantitative research project exploring risk modelling for Indian stocks using market data, statistical analysis, and portfolio-level risk concepts.",
+
+  category: "Finance",
+  status: "Planned",
+  version: "Concept",
+  year: 2026,
+
+  problem:
+    "Investors often focus heavily on returns while having limited visibility into the underlying risk of individual stocks and portfolios.",
+
+  solution:
+    "The project will explore quantitative methods for measuring volatility, drawdowns, correlations, and other risk characteristics across Indian equities.",
+
+  technologies: [
+    "Python",
+    "Statistics",
+    "Market Data",
+    "Quantitative Analysis",
+  ],
+
+  features: [
+    "Volatility analysis",
+    "Drawdown analysis",
+    "Correlation analysis",
+    "Stock risk scoring",
+  ],
+
+  roadmap: [
+    "Risk engine",
+    "Indian market dataset",
+    "Stock risk ranking",
+    "Portfolio risk model",
+  ],
+},
+
+{
+  id: 11,
+  slug: "crypto-fun",
+  title: "Crypto Fun",
+  tagline: "Making crypto concepts interactive and understandable.",
+  description:
+    "An experimental project exploring cryptocurrency concepts through interactive simulations, visualisations, and playful financial experiments.",
+
+  category: "Finance",
+  status: "Planned",
+  version: "Concept",
+  year: 2026,
+
+  problem:
+    "Cryptocurrency concepts can be difficult to understand because price movements, market cycles, dominance, liquidity, and token behaviour are often presented without intuitive context.",
+
+  solution:
+    "Crypto Fun will use interactive experiments and visualisations to make cryptocurrency market concepts easier to explore.",
+
+  technologies: [
+    "Python",
+    "AI",
+    "Market Data",
+    "Simulation",
+  ],
+
+  features: [
+    "Crypto simulations",
+    "Market visualisation",
+    "Interactive experiments",
+    "Market-cycle exploration",
+  ],
+
+  roadmap: [
+    "Crypto market simulator",
+    "Dominance visualisation",
+    "Market-cycle experiments",
+    "Interactive crypto tools",
+  ],
+},
 ];
