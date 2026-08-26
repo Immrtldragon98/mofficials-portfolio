@@ -3,9 +3,12 @@ import Container from "@/components/layout/Container";
 import { projects } from "@/data/projects";
 
 export default function FeaturedProjects() {
-  const visibleProjects = projects.slice(0, 3);
-  const featured = visibleProjects[0];
-  const secondary = visibleProjects.slice(1);
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .slice(0, 3);
+
+  const featured = featuredProjects[0];
+  const secondary = featuredProjects.slice(1);
 
   return (
     <section className="px-6 py-16 md:px-10 lg:px-12 lg:py-20">
@@ -108,13 +111,17 @@ export default function FeaturedProjects() {
                         <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400">
                           Portfolio
                         </p>
-                        <p className="mt-1 text-2xl font-bold">₹24.8L</p>
+
+                        <p className="mt-1 text-2xl font-bold">
+                          ₹24.8L
+                        </p>
                       </div>
 
                       <div className="text-right">
                         <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400">
                           Growth
                         </p>
+
                         <p className="mt-1 text-base font-semibold text-emerald-600">
                           +18.4%
                         </p>

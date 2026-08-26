@@ -98,7 +98,7 @@ export const projects: Project[] = [
       "Performance considerations matter when simulations scale.",
     ],
 
-    featured: true,
+    featured: false,
   },
 
   {
@@ -206,7 +206,7 @@ export const projects: Project[] = [
       "Trend analysis",
     ],
 
-    featured: true,
+    featured: false,
   },
 
   {
@@ -267,7 +267,7 @@ export const projects: Project[] = [
       "Advanced analytics",
     ],
 
-    featured: true,
+    featured: false,
   },
 
   {
