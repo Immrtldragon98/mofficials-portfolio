@@ -5,6 +5,7 @@ import { projects } from "@/data/projects";
 export default function FeaturedProjects() {
   const featuredProjects = projects
     .filter((project) => project.featured)
+    .sort((a, b) => b.id - a.id)
     .slice(0, 3);
 
   const featured = featuredProjects[0];
@@ -94,38 +95,18 @@ export default function FeaturedProjects() {
                       <span className="h-2 w-2 rounded-full bg-emerald-500" />
                     </div>
 
-                    <div className="mt-8 flex h-36 items-end gap-2">
-                      {[32, 46, 58, 54, 68, 63, 76, 84, 79, 94].map(
-                        (height, index) => (
-                          <div
-                            key={index}
-                            className="flex-1 rounded-t bg-neutral-200 transition-colors duration-300 group-hover:bg-blue-500"
-                            style={{ height: `${height}%` }}
-                          />
-                        ),
-                      )}
+                    <div className="mt-8 space-y-3">
+                      {featured.features.slice(0, 4).map((feature, index) => (
+                        <div key={feature} className="flex items-center gap-3 rounded-xl bg-neutral-50 px-4 py-3">
+                          <span className="font-mono text-[10px] text-blue-600">0{index + 1}</span>
+                          <span className="text-sm font-medium text-neutral-700">{feature}</span>
+                        </div>
+                      ))}
                     </div>
 
-                    <div className="mt-6 flex items-end justify-between">
-                      <div>
-                        <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400">
-                          Portfolio
-                        </p>
-
-                        <p className="mt-1 text-2xl font-bold">
-                          ₹24.8L
-                        </p>
-                      </div>
-
-                      <div className="text-right">
-                        <p className="text-[10px] uppercase tracking-[0.15em] text-neutral-400">
-                          Growth
-                        </p>
-
-                        <p className="mt-1 text-base font-semibold text-emerald-600">
-                          +18.4%
-                        </p>
-                      </div>
+                    <div className="mt-6 flex items-center justify-between border-t border-neutral-100 pt-5">
+                      <span className="text-[10px] uppercase tracking-[0.15em] text-neutral-400">{featured.version}</span>
+                      <span className="text-xs font-semibold text-emerald-600">{featured.status}</span>
                     </div>
                   </div>
                 </div>

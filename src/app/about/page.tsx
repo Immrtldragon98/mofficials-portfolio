@@ -24,9 +24,10 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-500">
-              This portfolio documents the process behind building products:
-              identifying problems, exploring solutions, designing systems,
-              shipping software and learning through iteration.
+              I am a mechanical maintenance engineer moving deeper into software
+              and AI/ML by building real products. This portfolio connects plant
+              knowledge, C++ and DSA foundations, backend engineering, and a
+              growing set of deployed systems.
             </p>
           </div>
         </section>
@@ -55,12 +56,12 @@ export default function AboutPage() {
                 </p>
 
                 <h2 className="mt-6 text-3xl font-black">
-                  AI · Finance · Software
+                  AI · Backend · Industrial
                 </h2>
 
                 <p className="mt-4 text-sm leading-6 text-neutral-500">
-                  Exploring systems where engineering, computation and
-                  real-world problems intersect.
+                  Building where engineering judgement, reliable software,
+                  intelligent systems, and real operational problems intersect.
                 </p>
               </div>
 

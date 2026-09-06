@@ -110,8 +110,8 @@ export const projects: Project[] = [
       "A trading journal and market observation system for recording market insights, watchlists, alerts, prices, and trading decisions.",
 
     category: "Finance",
-    status: "Completed",
-    version: "v1.0",
+    status: "Building",
+    version: "v3 Architecture",
     year: 2026,
 
     problem:
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       "Market Memory centralizes market observations, watchlists, alerts, price information, and trading decisions into one workflow.",
 
     architecture:
-      "A mobile-first product using a React Native frontend with a FastAPI backend and Supabase data layer.",
+      "An Expo and React Native client backed by a FastAPI modular monolith, Supabase Auth and PostgreSQL, plus a lightweight worker for durable price capture.",
 
     technologies: [
       "React Native",
@@ -135,7 +135,9 @@ export const projects: Project[] = [
       "Market observations",
       "Watchlists",
       "Price alerts",
-      "Market snapshots",
+      "Open and close price capture",
+      "Time-compressed weekly, monthly, and yearly review",
+      "Ranked asset search",
     ],
 
     challenges: [
@@ -149,9 +151,9 @@ export const projects: Project[] = [
     ],
 
     roadmap: [
-      "AI-assisted market research",
-      "Advanced analytics",
-      "Portfolio intelligence",
+      "Safe time-series migration",
+      "Durable background capture",
+      "Observability and 1,000-user readiness",
     ],
 
     featured: true,
@@ -337,7 +339,7 @@ export const projects: Project[] = [
 
   category: "Software",
   status: "Building",
-  version: "v0.1",
+  version: "v0.8",
   year: 2026,
 
   problem:
@@ -360,17 +362,18 @@ export const projects: Project[] = [
   ],
 
   features: [
-    "Private presence",
-    "Real-time status",
-    "Trusted groups",
+    "Six clear presence states",
+    "Custom short status",
+    "Trusted private circles",
+    "Last-active context",
     "Mobile-first experience",
   ],
 
   roadmap: [
-    "Real-time presence engine",
-    "Family spaces",
-    "Privacy controls",
-    "Notification system",
+    "Production-ready presence sync",
+    "Family and close-friend spaces",
+    "Granular privacy controls",
+    "Reliable notifications",
   ],
 
   lessons: [
@@ -378,6 +381,7 @@ export const projects: Project[] = [
     "Real-time systems require careful separation between state, events, and persistence.",
   ],
 
+  github: "https://github.com/Immrtldragon98/Dot_Space",
   featured: true,
 },
   {
@@ -420,6 +424,7 @@ export const projects: Project[] = [
       "Explainable stock reports",
       "Personal research assistant",
     ],
+    github: "https://github.com/Immrtldragon98/Market_memory_new",
   },
 {
   id: 9,
@@ -541,5 +546,177 @@ export const projects: Project[] = [
     "Market-cycle experiments",
     "Interactive crypto tools",
   ],
+},
+{
+  id: 12,
+  slug: "pokemon-simulator",
+  title: "Pokémon Battle Simulator",
+  tagline: "A browser battle game with tactical, turn-based combat.",
+  description:
+    "A deployed Pokémon-inspired battle simulator that turns familiar type matchups and move choices into a fast, interactive browser game.",
+  category: "Games",
+  status: "Completed",
+  version: "v1.0",
+  year: 2026,
+  problem:
+    "A battle game needs enough tactical depth to reward good choices while keeping every turn clear and responsive.",
+  solution:
+    "The simulator combines a focused battle loop, readable combat feedback, and a lightweight Express deployment that runs consistently in the browser.",
+  architecture:
+    "A static browser game served by a small Node.js and Express production server.",
+  technologies: ["JavaScript", "Node.js", "Express", "Game Logic"],
+  features: [
+    "Turn-based battles",
+    "Pokémon and move selection",
+    "Type-aware combat",
+    "Battle feedback",
+    "Responsive browser UI",
+  ],
+  challenges: [
+    "Keeping battle state deterministic and easy to follow.",
+    "Balancing visual feedback with a quick gameplay loop.",
+  ],
+  lessons: [
+    "Small games are strong exercises in state management and interaction design.",
+    "Immediate feedback makes rule-heavy systems easier to understand.",
+  ],
+  roadmap: ["Expanded roster", "Smarter opponents", "Battle history"],
+  github: "https://github.com/Immrtldragon98/pokemon-simulator",
+  featured: true,
+},
+{
+  id: 13,
+  slug: "personal-finance-ai",
+  title: "Personal Finance AI",
+  tagline: "A clear, explainable guide for everyday financial decisions.",
+  description:
+    "An AI finance workspace planned to connect cash flow, goals, investing scenarios, and plain-language guidance without hiding assumptions behind technical jargon.",
+  category: "AI · Finance",
+  status: "Planned",
+  version: "Research",
+  year: 2026,
+  problem:
+    "Personal finance tools often show numbers without helping beginners understand the trade-offs behind a decision.",
+  solution:
+    "Build an explainable assistant that models scenarios, labels assumptions, and teaches the financial concept behind every recommendation.",
+  architecture:
+    "A modular planning engine with deterministic calculators, a personal data layer, and an AI explanation layer grounded in calculated results.",
+  technologies: ["Python", "AI", "Financial Modelling", "Data Visualisation"],
+  features: [
+    "Cash-flow overview",
+    "Goal and scenario planning",
+    "Explainable recommendations",
+    "Assumption tracking",
+    "Beginner-first financial education",
+  ],
+  roadmap: ["Finance data model", "Scenario engine", "AI coach", "Privacy controls"],
+},
+{
+  id: 14,
+  slug: "genetics-lab",
+  title: "Genetics Lab",
+  tagline: "An interactive workspace for learning genetics through experiments.",
+  description:
+    "A planned AI/ML research playground for DNA visualisation, inheritance simulations, prediction experiments, and natural-language exploration.",
+  category: "AI",
+  status: "Planned",
+  version: "Concept",
+  year: 2026,
+  problem:
+    "Genetics becomes difficult to learn when sequences, inheritance, and probability are explained without an interactive model.",
+  solution:
+    "Create a visual lab where learners can change inputs, run simulations, and inspect how biological assumptions affect results.",
+  architecture:
+    "An experiment-oriented interface backed by deterministic genetics simulations, visualisation modules, and optional ML models.",
+  technologies: ["Python", "AI/ML", "Simulation", "Data Visualisation"],
+  features: ["DNA visualisation", "Inheritance simulation", "ML experiments", "Natural-language lab assistant"],
+  roadmap: ["Inheritance sandbox", "Sequence viewer", "Prediction notebooks", "Guided experiments"],
+},
+{
+  id: 15,
+  slug: "custom-vpn-firewall",
+  title: "Custom VPN & Firewall",
+  tagline: "Learning network security by building the traffic path.",
+  description:
+    "A planned cybersecurity project exploring encrypted tunnelling, traffic policy, network visibility, and safe-by-default firewall rules.",
+  category: "Cybersecurity",
+  status: "Planned",
+  version: "Concept",
+  year: 2026,
+  problem:
+    "Networking and security concepts remain abstract until routing, encryption, filtering, and observability are studied as one working system.",
+  solution:
+    "Build an educational lab that makes the packet path visible and tests explicit allow, deny, logging, and tunnel policies in an isolated environment.",
+  architecture:
+    "A local lab with a tunnel service, policy engine, firewall rules, and structured traffic logs.",
+  technologies: ["Networking", "Linux", "VPN", "Firewall"],
+  features: ["Encrypted tunnel", "Rule-based filtering", "Traffic logs", "Isolated security lab"],
+  roadmap: ["Threat model", "Tunnel prototype", "Policy engine", "Security tests"],
+},
+{
+  id: 16,
+  slug: "public-signal-search",
+  title: "Public Signal Search",
+  tagline: "Ethical timeline reconstruction for missing-person investigations.",
+  description:
+    "An education-first social-impact concept for authorised missing-person cases that organises public social-media timestamps and voluntarily shared clues into a reviewable timeline.",
+  category: "AI · Social Impact",
+  status: "Planned",
+  version: "Ethics Research",
+  year: 2026,
+  problem:
+    "Useful public clues can be scattered across posts and platforms, but careless aggregation can create serious privacy, safety, and misidentification risks.",
+  solution:
+    "Research a case-authorised workflow that records provenance, confidence, and consent, keeps a human investigator in control, and avoids covert or real-time tracking.",
+  architecture:
+    "A privacy-preserving evidence workspace for public or explicitly provided data, with timeline extraction, source provenance, confidence scoring, access controls, and audit logs.",
+  technologies: ["OSINT", "NLP", "Geospatial Data", "Privacy Engineering"],
+  features: [
+    "Timestamp timeline",
+    "Public-clue mapping",
+    "Source provenance",
+    "Human verification",
+    "Case access and audit controls",
+  ],
+  challenges: [
+    "Preventing stalking, surveillance, and misuse.",
+    "Managing false positives and uncertain location clues.",
+    "Following platform rules, consent requirements, and applicable law.",
+  ],
+  roadmap: ["Ethics and legal review", "Synthetic-data prototype", "Provenance model", "Safeguarded pilot design"],
+},
+{
+  id: 17,
+  slug: "industrial-reliability-twin",
+  title: "Industrial Reliability Twin",
+  tagline: "Equipment history transformed into reliability intelligence.",
+  description:
+    "An active WRM-focused digital twin that connects equipment hierarchy, live or last-known parameters, maintenance history, BOM data, and engineering knowledge.",
+  category: "Manufacturing & Industrial",
+  status: "Building",
+  version: "Foundation",
+  year: 2026,
+  problem:
+    "Engineers need one reliable view of equipment condition, component history, drawings, failure knowledge, and maintenance decisions across complex assemblies.",
+  solution:
+    "Build a hierarchy-aware reliability workspace that treats each equipment, sub-equipment, assembly, and component as a maintained engineering record and learning surface.",
+  architecture:
+    "A React frontend and FastAPI backend with PostgreSQL, document ingestion, vector retrieval, and an AI reliability layer grounded in BOMs, FMEA, RCA, drawings, and maintenance history.",
+  technologies: ["React", "FastAPI", "PostgreSQL", "RAG", "Docker"],
+  features: [
+    "Equipment-to-component hierarchy",
+    "Current and last-updated parameters",
+    "Maintenance history cards",
+    "BOM and document knowledge",
+    "Reliability guidance for engineers",
+  ],
+  challenges: [
+    "Modelling real WRM equipment without flattening assembly relationships.",
+    "Keeping AI answers traceable to plant evidence.",
+    "Combining structured history with drawings and engineering documents.",
+  ],
+  roadmap: ["WRM hierarchy and BOM", "Parameter history", "RAG knowledge layer", "Life-improvement recommendations"],
+  github: "https://github.com/Immrtldragon98/Industrial_Digital_twin",
+  featured: true,
 },
 ];

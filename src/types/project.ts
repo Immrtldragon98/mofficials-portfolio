@@ -12,7 +12,10 @@ export type ProjectCategory =
   | "Research"
   | "Industrial Software"
   | "Manufacturing & Industrial"
-  | "AI · Finance";
+  | "AI · Finance"
+  | "Games"
+  | "Cybersecurity"
+  | "AI · Social Impact";
 
 export interface Project {
   // Identity

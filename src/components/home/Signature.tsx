@@ -26,9 +26,9 @@ export default function Signature() {
 
           <p className="mx-auto mt-10 max-w-3xl text-xl leading-9 text-neutral-600">
 
-            This portfolio isn't a collection of screenshots.
+            This portfolio isn&apos;t a collection of screenshots.
 
-            It's a record of ideas becoming products through engineering,
+            It&apos;s a record of ideas becoming products through engineering,
             experimentation and continuous iteration.
 
           </p>
