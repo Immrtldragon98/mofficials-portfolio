@@ -110,8 +110,8 @@ export const projects: Project[] = [
       "A trading journal and market observation system for recording market insights, watchlists, alerts, prices, and trading decisions.",
 
     category: "Finance",
-    status: "Building",
-    version: "v3 Architecture",
+    status: "Completed",
+    version: "v3.0",
     year: 2026,
 
     problem:
@@ -151,9 +151,9 @@ export const projects: Project[] = [
     ],
 
     roadmap: [
-      "Safe time-series migration",
-      "Durable background capture",
-      "Observability and 1,000-user readiness",
+      "Advanced portfolio intelligence",
+      "Broader market-data coverage",
+      "Long-term decision-quality insights",
     ],
 
     featured: true,
@@ -386,22 +386,22 @@ export const projects: Project[] = [
 },
   {
     id: 8,
-    slug: "personal-ai-stock-market",
-    title: "Personal AI Stock Market Analyst",
-    tagline: "Reimagining fundamental and technical analysis for everyone.",
+    slug: "market-lens",
+    title: "Market Lens",
+    tagline: "A personal AI research lens for understanding investments.",
     description:
-      "A personal AI system designed to make fundamental and technical stock-market analysis easier to understand by translating complex financial reasoning into clear, explainable insights.",
+      "A beginner-first personal research AI that explains what a company does, builds a fundamental hypothesis, exposes assumptions, and later uses technical analysis to test—not replace—that reasoning.",
 
     category: "AI · Finance",
     status: "Building",
-    version: "Concept",
+    version: "V0 Research",
     year: 2026,
 
     problem:
       "Fundamental and technical analysis can feel fragmented and overly complex for people trying to understand markets.",
 
     solution:
-      "The product will combine AI, market data, fundamental analysis, and technical analysis into an explainable workflow designed for both beginners and experienced users.",
+      "Market Lens starts with company understanding and a modular fundamental hypothesis, adds regional and sector context, then uses technical evidence to verify assumptions in plain language.",
 
     technologies: [
       "AI",
@@ -410,21 +410,21 @@ export const projects: Project[] = [
     ],
 
     features: [
-      "Fundamental analysis",
-      "Technical analysis",
-      "Explainable market reasoning",
-      "AI-assisted research",
-      "Beginner-friendly insights",
+      "Company and business-model understanding",
+      "Fundamental hypothesis engine",
+      "Assumption tracking",
+      "Region and sector context",
+      "Evidence-backed beginner explanations",
     ],
 
     roadmap: [
-      "Fundamental analysis engine",
-      "Technical analysis engine",
-      "AI research workflow",
-      "Explainable stock reports",
-      "Personal research assistant",
+      "GAJA-style company research flow",
+      "India and Asia market context",
+      "Sector intelligence modules",
+      "Technical hypothesis verification",
+      "Source-grounded investment reports",
     ],
-    github: "https://github.com/Immrtldragon98/Market_memory_new",
+    github: "https://github.com/Immrtldragon98/Market_Lens",
   },
 {
   id: 9,
@@ -718,5 +718,41 @@ export const projects: Project[] = [
   roadmap: ["WRM hierarchy and BOM", "Parameter history", "RAG knowledge layer", "Life-improvement recommendations"],
   github: "https://github.com/Immrtldragon98/Industrial_Digital_twin",
   featured: true,
+},
+{
+  id: 18,
+  slug: "dance-crew-studio",
+  title: "Dance Crew Studio",
+  tagline: "A 3D browser stage where a nine-member crew moves on command.",
+  description:
+    "A completed interactive dance experience featuring a nine-character street, cool, and cyberpunk-inspired crew with keyboard-controlled movement, formations, and grounded stage presentation.",
+  category: "Games",
+  status: "Completed",
+  version: "v1.0",
+  year: 2026,
+  problem:
+    "Character-based dance experiences quickly feel artificial when performers float, move like puppets, or lack a believable relationship with the stage.",
+  solution:
+    "Dance Crew Studio uses grounded 3D characters, readable formations, direct keyboard controls, and coordinated movement to make the crew feel physically present.",
+  architecture:
+    "A browser-based 3D scene with reusable character models, animation state control, formation logic, keyboard input, camera composition, and stage lighting.",
+  technologies: ["JavaScript", "3D Web", "GLB Models", "Animation Systems"],
+  features: [
+    "Nine-member dance crew",
+    "Five male and four female characters",
+    "Keyboard-controlled dance actions",
+    "Street, cool, and cyberpunk visual direction",
+    "Grounded formations and stage movement",
+  ],
+  challenges: [
+    "Keeping every character's feet visually connected to the ground.",
+    "Coordinating multiple animated characters without puppet-like motion.",
+    "Maintaining a clear stage composition across formations.",
+  ],
+  lessons: [
+    "Ground contact and weight transfer matter more than visual complexity for believable motion.",
+    "Reusable animation states make multi-character interactions easier to extend.",
+  ],
+  roadmap: ["More dance packs", "Custom crew builder", "Expanded stages"],
 },
 ];

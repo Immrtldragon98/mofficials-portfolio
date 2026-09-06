@@ -87,7 +87,7 @@ export default function Footer() {
             </nav>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Immrtldragon98"
               target="_blank"
               rel="noreferrer"
               className="text-xs text-white/45 transition hover:text-white"

@@ -6,8 +6,10 @@ A product and engineering portfolio documenting deployed applications, active sy
 
 - Industrial Reliability Twin — WRM equipment hierarchy, parameters, history, BOM knowledge, and grounded reliability guidance
 - Pokémon Battle Simulator — deployed browser-based turn battle game
+- Dance Crew Studio — completed nine-character interactive 3D dance experience
 - Dot Space v0.8 — privacy-first presence app for families and close friends
-- Market Memory v3 — scalable mobile trading memory with durable price capture and ranked search
+- Market Memory v3 — completed scalable mobile trading memory with durable price capture and ranked search
+- Market Lens — active beginner-first personal investment research AI
 - Plant Spare Dashboard — SAP/Excel-driven spare, procurement, and consumption intelligence
 - Digital Stand Register — operational stand status, history, inventory, and maintenance workflow
 

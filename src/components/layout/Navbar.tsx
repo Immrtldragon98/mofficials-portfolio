@@ -26,7 +26,7 @@ export default function Navbar() {
           className="group flex flex-col"
         >
           <span className="font-mono text-sm font-bold tracking-[0.35em] text-black">
-            mofficals
+            MOFFICIALS
           </span>
 
           <span className="mt-0.5 text-[8px] uppercase tracking-[0.2em] text-neutral-400 transition-colors group-hover:text-blue-600">
@@ -47,7 +47,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://github.com/"
+            href="https://github.com/Immrtldragon98"
             target="_blank"
             rel="noreferrer"
             className="text-sm text-neutral-600 transition-colors hover:text-black"

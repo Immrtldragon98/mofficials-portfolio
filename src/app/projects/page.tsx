@@ -23,7 +23,7 @@ export default function ProjectsPage() {
               Portfolio
             </p>
 
-            <h1 className="mt-6 text-6xl font-black">
+            <h1 className="mt-6 text-5xl font-black tracking-[-0.055em] sm:text-6xl md:text-7xl">
               Engineering Projects
             </h1>
 

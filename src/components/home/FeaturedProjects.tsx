@@ -3,10 +3,15 @@ import Container from "@/components/layout/Container";
 import { projects } from "@/data/projects";
 
 export default function FeaturedProjects() {
-  const featuredProjects = projects
-    .filter((project) => project.featured)
-    .sort((a, b) => b.id - a.id)
-    .slice(0, 3);
+  const featuredSlugs = [
+    "wealthplay",
+    "industrial-reliability-twin",
+    "pokemon-simulator",
+  ];
+
+  const featuredProjects = featuredSlugs
+    .map((slug) => projects.find((project) => project.slug === slug))
+    .filter((project) => project !== undefined);
 
   const featured = featuredProjects[0];
   const secondary = featuredProjects.slice(1);

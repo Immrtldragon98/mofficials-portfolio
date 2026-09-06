@@ -5,15 +5,19 @@ export default function ProjectLinks({
 }: {
   project: Project;
 }) {
+  if (!project.live && !project.github && !project.documentation) {
+    return null;
+  }
+
   return (
     <section className="border-t border-neutral-200">
-      <div className="mx-auto flex max-w-7xl gap-6 px-6 py-20">
+      <div className="mx-auto flex max-w-[1440px] flex-wrap gap-4 px-6 py-16 md:px-10 lg:px-12">
 
         {project.live && (
           <a
             href={project.live}
             target="_blank"
-            className="rounded-full bg-black px-6 py-3 text-white"
+            className="rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-blue-600"
             rel="noreferrer"
           >
             Live Demo
@@ -24,10 +28,21 @@ export default function ProjectLinks({
           <a
             href={project.github}
             target="_blank"
-            className="rounded-full border px-6 py-3"
+            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
             rel="noreferrer"
           >
             GitHub
+          </a>
+        )}
+
+        {project.documentation && (
+          <a
+            href={project.documentation}
+            target="_blank"
+            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
+            rel="noreferrer"
+          >
+            Documentation
           </a>
         )}
       </div>

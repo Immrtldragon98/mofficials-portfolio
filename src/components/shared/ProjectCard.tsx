@@ -12,7 +12,7 @@ export default function ProjectCard({
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block rounded-3xl border border-neutral-200 p-10 transition hover:border-black hover:shadow-lg"
+      className="group block rounded-[24px] border border-neutral-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-neutral-400 hover:shadow-xl md:p-8 lg:p-10"
     >
       <StatusBadge status={project.status} />
 

@@ -14,15 +14,15 @@ export default function ContactPage() {
               Contact
             </p>
 
-            <h1 className="mt-6 text-6xl font-black tracking-[-0.06em] md:text-8xl">
+            <h1 className="mt-6 text-5xl font-black tracking-[-0.06em] sm:text-6xl md:text-8xl">
               Let&apos;s build
               <br />
               something useful.
             </h1>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-neutral-500">
-              Open to conversations around software, AI, finance and product
-              engineering.
+              Open to backend, AI/ML, industrial software, finance technology,
+              and product engineering opportunities.
             </p>
           </div>
 
@@ -34,20 +34,30 @@ export default function ContactPage() {
 
               <div className="mt-8 space-y-4">
                 <a
-                  href="#"
+                  href="mailto:vyvsyadav98@proton.me?subject=Portfolio%20conversation"
                   className="flex items-center justify-between rounded-xl border border-neutral-200 px-5 py-4 transition hover:border-black"
                 >
-                  <span className="font-medium">Email</span>
+                  <span>
+                    <span className="block font-medium">Email</span>
+                    <span className="mt-1 block text-xs text-neutral-500">
+                      vyvsyadav98@proton.me
+                    </span>
+                  </span>
                   <span>→</span>
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Immrtldragon98"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-between rounded-xl border border-neutral-200 px-5 py-4 transition hover:border-black"
                 >
-                  <span className="font-medium">GitHub</span>
+                  <span>
+                    <span className="block font-medium">GitHub</span>
+                    <span className="mt-1 block text-xs text-neutral-500">
+                      @Immrtldragon98
+                    </span>
+                  </span>
                   <span>↗</span>
                 </a>
 
