@@ -15,7 +15,7 @@ const upcoming = upcomingSlugs
 
 export default function UpcomingProjects() {
   return (
-    <section className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 lg:px-12">
+    <section className="mx-auto max-w-[1440px] px-4 py-16 md:px-10 md:py-20 lg:px-12">
       <div className="mb-8 flex items-end justify-between border-b border-neutral-200 pb-5">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-orange-600">
@@ -35,7 +35,7 @@ export default function UpcomingProjects() {
           <Link
             href={`/projects/${project.slug}`}
             key={project.slug}
-            className="group grid items-start gap-5 border-b border-neutral-200 py-7 transition-colors hover:bg-white lg:grid-cols-[80px_1fr_220px_120px]"
+            className="group grid grid-cols-[36px_1fr] items-start gap-x-3 gap-y-3 border-b border-neutral-200 py-6 transition-colors hover:bg-white sm:grid-cols-[48px_1fr] lg:grid-cols-[80px_1fr_220px_120px] lg:gap-5 lg:py-7"
           >
             <span className="font-mono text-sm text-neutral-400">
               {(index + 1).toString().padStart(2, "0")}
@@ -48,8 +48,8 @@ export default function UpcomingProjects() {
                 {project.tagline}
               </p>
             </div>
-            <p className="text-sm text-neutral-500">{project.category}</p>
-            <span className="text-xs uppercase tracking-[0.18em] text-neutral-400 lg:text-right">
+            <p className="col-start-2 text-sm text-neutral-500 lg:col-start-auto">{project.category}</p>
+            <span className="col-start-2 text-xs uppercase tracking-[0.18em] text-neutral-400 lg:col-start-auto lg:text-right">
               {project.version}
             </span>
           </Link>

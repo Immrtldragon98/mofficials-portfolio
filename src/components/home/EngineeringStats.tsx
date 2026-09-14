@@ -30,7 +30,7 @@ const stats = [
 
 export default function EngineeringStats() {
   return (
-    <section className="px-6 pb-16 md:px-10 lg:px-12 lg:pb-20">
+    <section className="px-4 pb-14 md:px-10 lg:px-12 lg:pb-20">
       <Container>
         <div className="overflow-hidden rounded-[20px] border border-neutral-200 bg-white">
           <div className="flex items-center justify-between border-b border-neutral-200 px-6 py-4">
@@ -47,9 +47,11 @@ export default function EngineeringStats() {
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className={`p-6 md:p-8 ${
-                  index !== 0 ? "border-l border-neutral-200" : ""
-                } ${index >= 2 ? "border-t border-neutral-200 md:border-t-0" : ""}`}
+                className={`p-5 md:p-8 ${
+                  index % 2 === 1 ? "border-l border-neutral-200" : ""
+                } ${index >= 2 ? "border-t border-neutral-200" : ""} ${
+                  index > 0 ? "md:border-l md:border-neutral-200" : "md:border-l-0"
+                } md:border-t-0`}
               >
                 <div className="flex items-start justify-between">
                   <span className="font-mono text-4xl font-bold tracking-[-0.05em] md:text-5xl">

@@ -1,35 +1,35 @@
 const journey = [
   {
-    year: "2023",
-    title: "Mechanical Engineering",
+    year: "Foundation",
+    title: "Mechanical maintenance & plant engineering",
     description:
-      "Built a strong foundation in engineering design, analysis and problem solving.",
+      "Built practical judgement around equipment, maintenance, reliability, plant workflows and the people who operate them.",
   },
   {
-    year: "2024",
-    title: "Programming",
+    year: "Learn",
+    title: "C++, DSA, Python & backend systems",
     description:
-      "Started learning C++, Python and software engineering fundamentals.",
+      "Moved from engineering problems into software fundamentals, APIs, databases and production-minded architecture.",
   },
   {
-    year: "2025",
-    title: "Financial Products",
+    year: "First ship",
+    title: "WealthPlay became the first app",
     description:
-      "Designed simulators and productivity tools focused on finance and learning.",
+      "Turned financial learning into an interactive product, then expanded into Market Memory, dashboards and browser games.",
   },
   {
-    year: "2026",
-    title: "Artificial Intelligence",
+    year: "Now · 2026",
+    title: "Industrial products, mobile apps & AI",
     description:
-      "Building AI-powered engineering systems and agentic workflows.",
+      "Building Workforce Hub, Detox Space, Market Lens and an Industrial Reliability Twin while continuing to ship useful tools.",
   },
 ];
 export default function EngineeringJourney() {
   return (
-    <section className="border-t border-neutral-200">
-      <div className="mx-auto max-w-7xl px-6 py-28">
+    <section className="border-t border-neutral-200 bg-white">
+      <div className="mx-auto max-w-[1440px] px-4 py-16 md:px-10 md:py-24 lg:px-12">
 
-        <p className="text-5xl font-bold text-neutral-200">
+        <p className="text-4xl font-bold text-neutral-200 md:text-5xl">
           03
         </p>
 
@@ -37,19 +37,19 @@ export default function EngineeringJourney() {
           Journey
         </p>
 
-        <h2 className="mt-4 text-5xl font-bold">
-          Learning by building.
+        <h2 className="mt-4 text-4xl font-black tracking-[-0.05em] md:text-6xl">
+          From plant floor to product studio.
         </h2>
 
-        <div className="mt-20 space-y-14">
+        <div className="mt-12 space-y-10 md:mt-20 md:space-y-14">
 
           {journey.map((step) => (
             <div
               key={step.year}
-              className="grid gap-8 border-l-2 border-neutral-200 pl-8 md:grid-cols-[140px_1fr]"
+              className="grid gap-4 border-l-2 border-neutral-200 pl-5 md:grid-cols-[160px_1fr] md:gap-8 md:pl-8"
             >
               <div>
-                <p className="text-2xl font-bold">
+                <p className="text-sm font-bold uppercase tracking-[0.15em] text-blue-600 md:text-base">
                   {step.year}
                 </p>
               </div>

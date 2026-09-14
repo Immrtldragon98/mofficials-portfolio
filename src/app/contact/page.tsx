@@ -27,7 +27,7 @@ export default function ContactPage() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-[24px] border border-neutral-200 bg-white p-8">
+            <div className="rounded-[24px] border border-neutral-200 bg-white p-5 sm:p-8">
               <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-400">
                 Start here
               </p>
@@ -35,11 +35,11 @@ export default function ContactPage() {
               <div className="mt-8 space-y-4">
                 <a
                   href="mailto:vyvsyadav98@proton.me?subject=Portfolio%20conversation"
-                  className="flex items-center justify-between rounded-xl border border-neutral-200 px-5 py-4 transition hover:border-black"
+                  className="flex min-w-0 items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-4 transition hover:border-black sm:px-5"
                 >
-                  <span>
+                  <span className="min-w-0">
                     <span className="block font-medium">Email</span>
-                    <span className="mt-1 block text-xs text-neutral-500">
+                    <span className="mt-1 block break-all text-xs text-neutral-500">
                       vyvsyadav98@proton.me
                     </span>
                   </span>

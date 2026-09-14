@@ -34,7 +34,7 @@ const areas = [
 export default function Hero() {
   return (
     <section className="bg-black text-white">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-10 lg:px-12">
+      <div className="mx-auto max-w-[1440px] px-4 md:px-10 lg:px-12">
 
         {/* Top line */}
         <div className="flex items-center justify-between border-b border-white/10 py-5">
@@ -63,7 +63,7 @@ export default function Hero() {
               We Build Your Dreams.
             </p>
 
-            <h1 className="mt-7 max-w-5xl text-[clamp(4.2rem,8.5vw,8.8rem)] font-black leading-[0.82] tracking-[-0.075em]">
+            <h1 className="mt-7 max-w-5xl text-[clamp(3.25rem,15vw,8.8rem)] font-black leading-[0.86] tracking-[-0.07em]">
               MOFFICIALS
               <br />
               BUILDS.
@@ -85,7 +85,7 @@ export default function Hero() {
               <span>Deploy</span>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 grid gap-3 sm:flex sm:flex-wrap sm:gap-4">
               <Button href="/projects" variant="primary">
                 Explore Our Work →
               </Button>
@@ -100,7 +100,7 @@ export default function Hero() {
           <div className="flex flex-col">
 
             {/* Studio statement */}
-            <div className="border-b border-white/10 p-8 lg:p-10">
+            <div className="border-b border-white/10 p-6 sm:p-8 lg:p-10">
               <p className="text-[10px] uppercase tracking-[0.25em] text-white/35">
                 What We Do
               </p>
@@ -116,7 +116,7 @@ export default function Hero() {
               {areas.map((area) => (
                 <div
                   key={area.number}
-                  className="group border-b border-white/10 px-8 py-6 transition-colors hover:bg-white/[0.03] lg:px-10"
+                  className="group border-b border-white/10 px-6 py-6 transition-colors hover:bg-white/[0.03] sm:px-8 lg:px-10"
                 >
                   <div className="flex items-start gap-5">
                     <span className="font-mono text-[10px] text-blue-400">

@@ -17,7 +17,7 @@ export default function FeaturedProjects() {
   const secondary = featuredProjects.slice(1);
 
   return (
-    <section className="px-6 py-16 md:px-10 lg:px-12 lg:py-20">
+    <section className="px-4 py-14 md:px-10 md:py-16 lg:px-12 lg:py-20">
       <Container>
         <div className="mb-8 flex items-end justify-between border-b border-neutral-200 pb-5">
           <div>
@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
                       {featured.tagline}
                     </p>
 
-                    <h3 className="mt-4 text-5xl font-black tracking-[-0.06em] md:text-6xl">
+                    <h3 className="mt-4 text-4xl font-black tracking-[-0.06em] sm:text-5xl md:text-6xl">
                       {featured.title}
                     </h3>
 
@@ -88,10 +88,10 @@ export default function FeaturedProjects() {
                   </div>
                 </div>
 
-                <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden bg-[#efefec] p-8">
+                <div className="relative flex min-h-[300px] items-center justify-center overflow-hidden bg-[#efefec] p-4 sm:p-8">
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:32px_32px]" />
 
-                  <div className="relative w-full max-w-[500px] rounded-2xl border border-black/10 bg-white p-6 shadow-[0_30px_80px_rgba(0,0,0,0.12)] transition duration-500 group-hover:-translate-y-2">
+                  <div className="relative w-full max-w-[500px] rounded-2xl border border-black/10 bg-white p-5 shadow-[0_30px_80px_rgba(0,0,0,0.12)] transition duration-500 group-hover:-translate-y-2 sm:p-6">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-semibold">
                         {featured.title}

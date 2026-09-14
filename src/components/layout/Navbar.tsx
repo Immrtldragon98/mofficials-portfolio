@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "@/components/layout/MobileMenu";
 
 const navigation = [
   {
@@ -18,12 +19,12 @@ const navigation = [
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-6 md:px-10 lg:px-12">
+      <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 md:h-[72px] md:px-10 lg:px-12">
 
         {/* Brand */}
         <Link
           href="/"
-          className="group flex flex-col"
+          className="group flex min-h-11 flex-col justify-center"
         >
           <span className="font-mono text-sm font-bold tracking-[0.35em] text-black">
             MOFFICIALS
@@ -59,10 +60,11 @@ export default function Navbar() {
         {/* Contact */}
         <Link
           href="/contact"
-          className="inline-flex h-10 items-center justify-center rounded-full bg-black px-5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-600"
+          className="hidden h-10 items-center justify-center rounded-full bg-black px-5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-600 md:inline-flex"
         >
           Contact →
         </Link>
+        <MobileMenu />
       </div>
     </header>
   );

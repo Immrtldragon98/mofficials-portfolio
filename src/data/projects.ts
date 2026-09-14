@@ -338,7 +338,7 @@ export const projects: Project[] = [
     "A privacy-first presence application designed to help families and close groups stay connected through simple, meaningful digital presence.",
 
   category: "Software",
-  status: "Building",
+  status: "Completed",
   version: "v0.8",
   year: 2026,
 
@@ -346,7 +346,7 @@ export const projects: Project[] = [
     "Existing communication platforms are often overloaded with feeds, notifications, and social features when people simply want to know whether someone is available or okay.",
 
   solution:
-    "Dot Space focuses on lightweight digital presence, allowing trusted people to share their availability and presence without the noise of conventional social platforms.",
+    "Dot Space established the privacy-first presence model and evolved into Detox Space, a calmer native Android product focused on trusted connections and small real-world invitations.",
 
   architecture:
     "A mobile-first real-time application using React Native, TypeScript, Node.js, Express, PostgreSQL, Redis, and Socket.IO.",
@@ -370,10 +370,8 @@ export const projects: Project[] = [
   ],
 
   roadmap: [
-    "Production-ready presence sync",
-    "Family and close-friend spaces",
-    "Granular privacy controls",
-    "Reliable notifications",
+    "Continue the product direction in Detox Space",
+    "Preserve privacy-first presence principles",
   ],
 
   lessons: [
@@ -694,21 +692,21 @@ export const projects: Project[] = [
     "An active WRM-focused digital twin that connects equipment hierarchy, live or last-known parameters, maintenance history, BOM data, and engineering knowledge.",
   category: "Manufacturing & Industrial",
   status: "Building",
-  version: "Foundation",
+  version: "v0.2",
   year: 2026,
   problem:
     "Engineers need one reliable view of equipment condition, component history, drawings, failure knowledge, and maintenance decisions across complex assemblies.",
   solution:
     "Build a hierarchy-aware reliability workspace that treats each equipment, sub-equipment, assembly, and component as a maintained engineering record and learning surface.",
   architecture:
-    "A React frontend and FastAPI backend with PostgreSQL, document ingestion, vector retrieval, and an AI reliability layer grounded in BOMs, FMEA, RCA, drawings, and maintenance history.",
-  technologies: ["React", "FastAPI", "PostgreSQL", "RAG", "Docker"],
+    "A React and TypeScript frontend with FastAPI, PostgreSQL and pgvector, Excel ingestion, role-based access, and a source-grounded RAG layer using local embedding and language models.",
+  technologies: ["React", "FastAPI", "PostgreSQL", "pgvector", "RAG"],
   features: [
     "Equipment-to-component hierarchy",
     "Current and last-updated parameters",
-    "Maintenance history cards",
-    "BOM and document knowledge",
-    "Reliability guidance for engineers",
+    "MTBF, MTTR, availability and risk metrics",
+    "Excel imports for condition, maintenance and failures",
+    "Source-grounded reliability assistant",
   ],
   challenges: [
     "Modelling real WRM equipment without flattening assembly relationships.",
@@ -754,5 +752,78 @@ export const projects: Project[] = [
     "Reusable animation states make multi-character interactions easier to extend.",
   ],
   roadmap: ["More dance packs", "Custom crew builder", "Expanded stages"],
+},
+{
+  id: 19,
+  slug: "detox-space",
+  title: "Detox Space",
+  tagline: "Less scrolling. More real moments.",
+  description:
+    "A native Android app that helps trusted people share simple availability and turn it into small real-world invitations—without feeds, likes, follower counts, public profiles, or location tracking.",
+  category: "Software",
+  status: "Building",
+  version: "v0.3",
+  year: 2026,
+  problem:
+    "Mainstream social apps optimize for attention when close relationships often need a quieter way to signal availability and make a simple plan.",
+  solution:
+    "Detox Space combines three calm presence states with private connections and lightweight Walk, Coffee, Talk, or Free invitations.",
+  architecture:
+    "A Kotlin and Jetpack Compose Android client with Room, DataStore and Hilt, connected to a Node.js and TypeScript API with PostgreSQL, device sessions and Socket.IO sync.",
+  technologies: ["Kotlin", "Jetpack Compose", "Node.js", "PostgreSQL", "Socket.IO"],
+  features: [
+    "Available, Quiet and Away presence",
+    "Private connection codes",
+    "Tiny real-world invitations",
+    "Local persistence and dark mode",
+    "Authenticated cross-device sync",
+  ],
+  challenges: [
+    "Keeping the experience useful without recreating a social feed.",
+    "Making invitation state changes reliable across devices.",
+  ],
+  lessons: [
+    "Privacy and restraint are product features, not missing features.",
+    "A small interaction model still needs strong offline and sync foundations.",
+  ],
+  roadmap: ["Encrypted token storage", "Push notifications", "Two-phone network testing"],
+  github: "https://github.com/Immrtldragon98/Detox_space",
+},
+{
+  id: 20,
+  slug: "workforce-hub",
+  title: "Workforce Hub",
+  tagline: "Contractor manpower operations across web and Android.",
+  description:
+    "A deployed workforce product for plant teams, bringing attendance, shifts, leave, work allocation, employee access and role-based operations into one system.",
+  category: "Manufacturing & Industrial",
+  status: "Building",
+  version: "v0.1",
+  year: 2026,
+  problem:
+    "Contractor manpower records, attendance, shift assignment and daily work coordination become slow and error-prone when spread across paper and disconnected messages.",
+  solution:
+    "Workforce Hub gives workers and plant teams one mobile-friendly workflow for QR attendance, shifts, leave, work allotment and controlled change requests.",
+  architecture:
+    "A Next.js and React application backed by PostgreSQL and Drizzle, packaged for Android with Capacitor and designed around worker, viewer and administrator roles.",
+  technologies: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle", "Capacitor"],
+  features: [
+    "QR attendance",
+    "Employee ID and PIN access",
+    "A, B, C and G shift planning",
+    "Leave calendar and work allotment",
+    "Admin, worker and viewer roles",
+    "Web and Android delivery",
+  ],
+  challenges: [
+    "Mapping plant hierarchy and contractor workflows into clear permissions.",
+    "Keeping daily mobile actions fast for workers on site.",
+  ],
+  lessons: [
+    "Operational software succeeds when it fits the existing workday.",
+    "Mobile delivery matters when the users are away from desks.",
+  ],
+  roadmap: ["Production hardening", "Operational reporting", "Notification workflows"],
+  github: "https://github.com/Immrtldragon98/Manpower_Management_App",
 },
 ];

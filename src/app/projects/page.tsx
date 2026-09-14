@@ -17,7 +17,7 @@ export default function ProjectsPage() {
       <main>
 
         {/* Hero */}
-        <section className="border-b border-neutral-200 bg-neutral-50 py-24">
+        <section className="border-b border-neutral-200 bg-neutral-50 py-16 md:py-24">
           <Container>
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-blue-600">
               Portfolio
@@ -33,23 +33,23 @@ export default function ProjectsPage() {
               deployable product. This page documents that journey.
             </p>
 
-            <div className="mt-12 flex flex-wrap gap-4">
-              <div className="rounded-xl border bg-white px-5 py-4">
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4">
+              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
                 <p className="text-3xl font-bold">{projects.length}</p>
                 <p className="text-sm text-neutral-500">Projects</p>
               </div>
 
-              <div className="rounded-xl border bg-white px-5 py-4">
+              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
                 <p className="text-3xl font-bold">{completed.length}</p>
                 <p className="text-sm text-neutral-500">Completed</p>
               </div>
 
-              <div className="rounded-xl border bg-white px-5 py-4">
+              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
                 <p className="text-3xl font-bold">{building.length}</p>
                 <p className="text-sm text-neutral-500">Building</p>
               </div>
 
-              <div className="rounded-xl border bg-white px-5 py-4">
+              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
                 <p className="text-3xl font-bold">{planned.length}</p>
                 <p className="text-sm text-neutral-500">Planned</p>
               </div>
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         </section>
 
         {/* Completed */}
-        <section className="py-24">
+        <section className="py-16 md:py-24">
           <Container>
 
             <h2 className="text-4xl font-bold">
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
         </section>
 
         {/* Building */}
-        <section className="bg-neutral-50 py-24">
+        <section className="bg-neutral-50 py-16 md:py-24">
           <Container>
 
             <h2 className="text-4xl font-bold">
@@ -106,7 +106,7 @@ export default function ProjectsPage() {
         </section>
 
         {/* Upcoming */}
-        <section className="py-24">
+        <section className="py-16 md:py-24">
           <Container>
 
             <h2 className="text-4xl font-bold">
@@ -133,7 +133,7 @@ export default function ProjectsPage() {
         <section className="border-t border-neutral-200 bg-black py-24 text-white">
           <Container>
 
-            <h2 className="text-5xl font-bold">
+            <h2 className="text-4xl font-bold tracking-[-0.04em] md:text-5xl">
               Interested in how these products were built?
             </h2>
 

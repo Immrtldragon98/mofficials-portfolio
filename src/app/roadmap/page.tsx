@@ -41,7 +41,7 @@ export default function JournalPage() {
               Journal / 01
             </p>
 
-            <h1 className="mt-6 text-6xl font-black tracking-[-0.065em] md:text-8xl">
+            <h1 className="mt-6 text-5xl font-black tracking-[-0.065em] sm:text-6xl md:text-8xl">
               Engineering Log.
             </h1>
 

@@ -11,7 +11,7 @@ export default function ProjectLinks({
 
   return (
     <section className="border-t border-neutral-200">
-      <div className="mx-auto flex max-w-[1440px] flex-wrap gap-4 px-6 py-16 md:px-10 lg:px-12">
+      <div className="mx-auto grid max-w-[1440px] gap-3 px-4 py-12 sm:flex sm:flex-wrap sm:gap-4 md:px-10 md:py-16 lg:px-12">
 
         {project.live && (
           <a

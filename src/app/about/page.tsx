@@ -17,7 +17,7 @@ export default function AboutPage() {
               About / 01
             </p>
 
-            <h1 className="mt-6 max-w-5xl text-6xl font-black tracking-[-0.065em] md:text-8xl">
+            <h1 className="mt-6 max-w-5xl text-5xl font-black tracking-[-0.065em] sm:text-6xl md:text-8xl">
               Engineering ideas
               <br />
               into useful products.

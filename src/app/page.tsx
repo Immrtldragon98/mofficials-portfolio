@@ -3,6 +3,7 @@ import Hero from "@/components/home/Hero";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import EngineeringStats from "@/components/home/EngineeringStats";
 import UpcomingProjects from "@/components/home/UpcomingProjects";
+import EngineeringJourney from "@/components/home/EngineeringJourney";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <FeaturedProjects />
         <EngineeringStats />
+        <EngineeringJourney />
         <UpcomingProjects />
       </main>
 
