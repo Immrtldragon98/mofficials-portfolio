@@ -20,7 +20,7 @@ export default function ProjectCard({
         {project.title}
       </h3>
 
-      <p className="mt-3 text-blue-600">
+      <p className="mt-3 text-neutral-500">
         {project.tagline}
       </p>
 
@@ -32,14 +32,14 @@ export default function ProjectCard({
         {project.technologies.slice(0, 4).map((tech) => (
           <span
             key={tech}
-            className="rounded-full bg-neutral-100 px-3 py-1 text-sm"
+            className="rounded-lg bg-neutral-100 px-3 py-1 text-sm"
           >
             {tech}
           </span>
         ))}
       </div>
 
-      <p className="mt-8 font-semibold text-blue-600 sm:mt-10">
+      <p className="mt-8 font-semibold text-neutral-500 sm:mt-10">
         View Case Study →
       </p>
     </Link>

@@ -10,7 +10,7 @@ export default function ProjectDashboard() {
         <div className="flex items-end justify-between">
 
           <div>
-            <p className="uppercase tracking-[0.3em] text-blue-600 text-sm font-semibold">
+            <p className="uppercase tracking-[0.3em] text-neutral-500 text-sm font-semibold">
               Engineering Dashboard
             </p>
 
@@ -21,7 +21,7 @@ export default function ProjectDashboard() {
 
           <Link
             href="/projects"
-            className="font-semibold text-blue-600 hover:underline"
+            className="font-semibold text-neutral-500 hover:underline"
           >
             View All →
           </Link>
@@ -61,7 +61,7 @@ export default function ProjectDashboard() {
 
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="font-semibold hover:text-blue-600"
+                      className="font-semibold hover:text-neutral-500"
                     >
                       {project.title}
                     </Link>

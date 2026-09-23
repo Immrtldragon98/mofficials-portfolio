@@ -2,7 +2,7 @@ export default function JournalIntro() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-32">
 
-      <p className="text-sm uppercase tracking-widest text-blue-600">
+      <p className="text-sm uppercase tracking-widest text-neutral-500">
 
         Why this portfolio?
 

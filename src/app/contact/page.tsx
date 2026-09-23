@@ -10,7 +10,7 @@ export default function ContactPage() {
       <main className="mx-auto max-w-[1440px] px-6 py-16 md:px-10 lg:px-12 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">
               Contact
             </p>
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
 
                 <Link
                   href="/projects"
-                  className="flex items-center justify-between rounded-xl bg-black px-5 py-4 font-medium text-white transition hover:bg-blue-600"
+                  className="flex items-center justify-between rounded-xl bg-black px-5 py-4 font-medium text-white transition hover:bg-neutral-800"
                 >
                   <span>View Projects</span>
                   <span>→</span>

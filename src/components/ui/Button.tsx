@@ -14,17 +14,17 @@ export default function Button({
 }: ButtonProps) {
   const styles = {
     primary:
-      "bg-white text-black border border-white hover:bg-blue-500 hover:border-blue-500 hover:text-white",
+      "bg-transparent text-white border border-white/45 hover:border-white hover:bg-white/10",
     secondary:
       "bg-transparent text-white border border-white/30 hover:border-white hover:bg-white/10",
     dark:
-      "bg-black text-white border border-black hover:bg-blue-600 hover:border-blue-600",
+      "bg-black text-white border border-black hover:bg-neutral-800 hover:border-neutral-800",
   };
 
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-12 w-full items-center justify-center rounded-full px-7 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 sm:w-auto ${styles[variant]}`}
+      className={`inline-flex min-h-12 w-full items-center justify-center rounded-lg px-7 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 sm:w-auto ${styles[variant]}`}
     >
       {children}
     </Link>

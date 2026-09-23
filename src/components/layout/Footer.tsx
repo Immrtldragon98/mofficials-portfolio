@@ -26,7 +26,7 @@ export default function Footer() {
 
             <Link
               href="/contact"
-              className="group mt-7 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-full border border-white/45 bg-transparent px-6 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-black sm:w-fit"
+              className="group mt-7 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg border border-white/45 bg-transparent px-6 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-black sm:w-fit"
             >
               <span>Start a conversation</span>
               <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">

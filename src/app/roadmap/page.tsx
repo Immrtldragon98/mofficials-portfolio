@@ -37,7 +37,7 @@ export default function JournalPage() {
           <BackButton />
 
           <div className="mt-16 max-w-5xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">
               Journal / 01
             </p>
 
@@ -64,7 +64,7 @@ export default function JournalPage() {
                 </span>
 
                 <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500">
                     {log.type}
                   </p>
 
@@ -90,7 +90,7 @@ export default function JournalPage() {
         <div className="mx-auto max-w-[1440px] px-6 py-16 md:px-10 lg:px-12">
           <Link
             href="/projects"
-            className="inline-flex rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-600"
+            className="inline-flex rounded-lg bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
             Explore Products →
           </Link>

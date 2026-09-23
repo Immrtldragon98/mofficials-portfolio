@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Left statement */}
           <div className="border-b border-white/10 py-14 lg:border-b-0 lg:border-r lg:py-16 lg:pr-16">
 
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-400">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/55">
               We Build Your Dreams.
             </p>
 
@@ -119,7 +119,7 @@ export default function Hero() {
                   className="group border-b border-white/10 px-6 py-6 transition-colors hover:bg-white/[0.03] sm:px-8 lg:px-10"
                 >
                   <div className="flex items-start gap-5">
-                    <span className="font-mono text-[10px] text-blue-400">
+                    <span className="font-mono text-[10px] text-white/55">
                       {area.number}
                     </span>
 
@@ -129,7 +129,7 @@ export default function Hero() {
                           {area.title}
                         </h2>
 
-                        <span className="text-white/20 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-blue-400">
+                        <span className="text-white/20 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white/55">
                           ↗
                         </span>
                       </div>

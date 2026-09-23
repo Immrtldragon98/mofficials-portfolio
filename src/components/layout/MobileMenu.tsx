@@ -23,7 +23,7 @@ export default function MobileMenu() {
         aria-controls="mobile-navigation"
         aria-label={open ? "Close navigation" : "Open navigation"}
         onClick={() => setOpen((current) => !current)}
-        className="flex h-11 w-11 items-center justify-center rounded-full border border-neutral-300 bg-white text-xl"
+        className="flex h-11 w-11 items-center justify-center rounded-lg border border-neutral-300 bg-white text-xl"
       >
         <span aria-hidden="true">{open ? "×" : "☰"}</span>
       </button>

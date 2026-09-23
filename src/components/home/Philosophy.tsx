@@ -7,7 +7,7 @@ export default function Philosophy() {
           07
         </p>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
           Philosophy
         </p>
 
