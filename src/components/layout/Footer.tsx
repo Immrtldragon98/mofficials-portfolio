@@ -2,18 +2,18 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="px-5 pb-5 pt-8 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[1440px] overflow-hidden rounded-[28px] bg-black text-white">
+    <footer className="px-4 pb-4 pt-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1440px] overflow-hidden rounded-[22px] bg-black text-white sm:rounded-[28px]">
 
         {/* Closing CTA */}
-        <div className="grid gap-12 p-8 sm:p-10 lg:grid-cols-[1.3fr_0.7fr] lg:p-14">
+        <div className="grid gap-8 p-6 sm:p-10 lg:grid-cols-[1.3fr_0.7fr] lg:p-14">
 
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-blue-400">
               End of Log
             </p>
 
-            <h2 className="mt-6 max-w-4xl text-[clamp(3.5rem,7vw,7rem)] font-black leading-[0.82] tracking-[-0.07em]">
+            <h2 className="mt-5 max-w-4xl text-[clamp(2.75rem,11vw,7rem)] font-black leading-[0.86] tracking-[-0.065em]">
               Let&apos;s build
               <br />
               something
@@ -24,13 +24,13 @@ export default function Footer() {
 
           <div className="flex flex-col justify-between">
 
-            <p className="max-w-sm text-sm leading-6 text-white/45">
+            <p className="max-w-sm text-sm leading-6 text-white/65">
               Products, experiments and ideas are always evolving.
             </p>
 
             <Link
               href="/contact"
-              className="group mt-10 inline-flex h-12 w-fit items-center gap-3 rounded-full bg-white px-6 text-sm font-semibold text-black transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-500 hover:text-white"
+              className="group mt-7 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-full bg-white px-6 text-sm font-semibold text-black transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-500 hover:text-white sm:w-fit"
             >
               Start a conversation
               <span className="transition-transform duration-200 group-hover:translate-x-1">
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         {/* Footer navigation */}
-        <div className="border-t border-white/10 px-8 py-5 sm:px-10 lg:px-14">
+        <div className="border-t border-white/10 px-6 py-5 sm:px-10 lg:px-14">
 
           <div className="grid gap-5 md:grid-cols-[1fr_auto_auto] md:items-center md:gap-10">
 
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom meta */}
-        <div className="border-t border-white/10 px-8 py-4 sm:px-10 lg:px-14">
+        <div className="border-t border-white/10 px-6 py-4 sm:px-10 lg:px-14">
 
           <div className="flex flex-col gap-2 text-[10px] uppercase tracking-[0.18em] text-white/25 sm:flex-row sm:items-center sm:justify-between">
             <span>Version 2.0</span>

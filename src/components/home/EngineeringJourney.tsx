@@ -19,9 +19,9 @@ const journey = [
   },
   {
     year: "Now · 2026",
-    title: "Industrial products, mobile apps & AI",
+    title: "Local agents, adaptive learning & mobile products",
     description:
-      "Building Workforce Hub, Detox Space, Market Lens and an Industrial Reliability Twin while continuing to ship useful tools.",
+      "Building DumbBots, Market Lens, the Economy Learning Dashboard, Workforce Hub, Detox Space and Nook—while turning industrial experience into reusable backend and AI logic.",
   },
 ];
 export default function EngineeringJourney() {

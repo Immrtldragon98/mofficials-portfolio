@@ -2,7 +2,6 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 
 const upcomingSlugs = [
-  "personal-finance-ai",
   "genetics-lab",
   "passing-game-mobile",
   "custom-vpn-firewall",

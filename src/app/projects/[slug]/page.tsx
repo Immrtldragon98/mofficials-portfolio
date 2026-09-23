@@ -13,6 +13,7 @@ import EngineeringNotes from "@/components/project/EngineeringNotes";
 import TechStack from "@/components/project/TechStack";
 import FutureRoadmap from "@/components/project/FutureRoadmap";
 import ProjectLinks from "@/components/project/ProjectLinks";
+import ProjectJourney from "@/components/project/ProjectJourney";
 
 interface Props {
   params: Promise<{
@@ -38,6 +39,8 @@ export default async function ProjectPage({ params }: Props) {
         <ProjectHero project={project} />
 
         <ProjectOverview project={project} />
+
+        <ProjectJourney project={project} />
 
         <FeatureList project={project} />
 
