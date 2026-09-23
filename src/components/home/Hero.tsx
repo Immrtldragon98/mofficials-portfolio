@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="mx-auto max-w-[1440px] px-4 md:px-10 lg:px-12">
 
         {/* Top line */}
-        <div className="flex items-center justify-between border-b border-white/10 py-5">
+        <div className="hidden items-center justify-between border-b border-white/10 py-5 md:flex">
           <div>
             <p className="font-mono text-sm font-bold tracking-[0.35em]">
               MOFFICIALS
@@ -63,14 +63,14 @@ export default function Hero() {
               We Build Your Dreams.
             </p>
 
-            <h1 className="mt-7 max-w-5xl text-[clamp(3.25rem,15vw,8.8rem)] font-black leading-[0.86] tracking-[-0.07em]">
+            <h1 className="mt-7 max-w-5xl text-[clamp(3rem,14vw,8.8rem)] font-black leading-[0.88] tracking-[-0.065em]">
               MOFFICIALS
               <br />
               BUILDS.
             </h1>
 
-            <p className="mt-8 max-w-2xl text-base leading-7 text-white/55 md:text-lg">
-              We turn ideas into useful digital and engineering products —
+            <p className="mt-8 max-w-2xl text-base leading-7 text-white/70 md:text-lg">
+              I turn ideas into useful digital and engineering products —
               from concept and architecture to software, intelligent systems
               and industrial solutions.
             </p>
@@ -85,13 +85,13 @@ export default function Hero() {
               <span>Deploy</span>
             </div>
 
-            <div className="mt-10 grid gap-3 sm:flex sm:flex-wrap sm:gap-4">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Button href="/projects" variant="primary">
-                Explore Our Work →
+                Explore my work →
               </Button>
 
               <Button href="/about" variant="secondary">
-                Our Story
+                My journey
               </Button>
             </div>
           </div>

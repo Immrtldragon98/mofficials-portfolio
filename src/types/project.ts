@@ -41,6 +41,7 @@ export interface Project {
   technologies: string[];
   challenges?: string[];
   lessons?: string[];
+  journey?: string[];
   futurePlans?: string[];
   roadmap?: string[];
 

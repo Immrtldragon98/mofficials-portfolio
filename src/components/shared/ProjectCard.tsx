@@ -16,7 +16,7 @@ export default function ProjectCard({
     >
       <StatusBadge status={project.status} />
 
-      <h3 className="mt-7 text-3xl font-bold tracking-[-0.035em]">
+      <h3 className="mt-6 break-words text-2xl font-bold tracking-[-0.035em] sm:mt-7 sm:text-3xl">
         {project.title}
       </h3>
 
@@ -28,7 +28,7 @@ export default function ProjectCard({
         {project.description}
       </p>
 
-      <div className="mt-10 flex flex-wrap gap-2">
+      <div className="mt-8 flex flex-wrap gap-2 sm:mt-10">
         {project.technologies.slice(0, 4).map((tech) => (
           <span
             key={tech}
@@ -39,7 +39,7 @@ export default function ProjectCard({
         ))}
       </div>
 
-      <p className="mt-10 font-semibold text-blue-600">
+      <p className="mt-8 font-semibold text-blue-600 sm:mt-10">
         View Case Study →
       </p>
     </Link>

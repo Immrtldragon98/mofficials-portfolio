@@ -13,7 +13,7 @@ export default function ProjectHero({ project }: Props) {
           {project.status} · {project.version}
         </p>
 
-        <h1 className="mt-6 max-w-5xl text-5xl font-black leading-[0.95] tracking-[-0.055em] sm:text-6xl md:text-7xl">
+        <h1 className="mt-6 max-w-5xl break-words text-[clamp(2.6rem,12vw,4.5rem)] font-black leading-[0.95] tracking-[-0.05em]">
           {project.title}
         </h1>
 

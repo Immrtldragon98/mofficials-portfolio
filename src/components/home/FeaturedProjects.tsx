@@ -5,8 +5,8 @@ import { projects } from "@/data/projects";
 export default function FeaturedProjects() {
   const featuredSlugs = [
     "wealthplay",
-    "industrial-reliability-twin",
-    "pokemon-simulator",
+    "dance-crew-studio",
+    "market-memory",
   ];
 
   const featuredProjects = featuredSlugs

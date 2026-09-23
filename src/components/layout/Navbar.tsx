@@ -26,11 +26,11 @@ export default function Navbar() {
           href="/"
           className="group flex min-h-11 flex-col justify-center"
         >
-          <span className="font-mono text-sm font-bold tracking-[0.35em] text-black">
+          <span className="font-mono text-[13px] font-bold tracking-[0.28em] text-black sm:text-sm sm:tracking-[0.35em]">
             MOFFICIALS
           </span>
 
-          <span className="mt-0.5 text-[8px] uppercase tracking-[0.2em] text-neutral-400 transition-colors group-hover:text-blue-600">
+          <span className="mt-0.5 text-[7px] uppercase tracking-[0.16em] text-neutral-500 transition-colors group-hover:text-blue-600 sm:text-[8px] sm:tracking-[0.2em]">
             Product & Engineering Studio
           </span>
         </Link>
