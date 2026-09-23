@@ -21,7 +21,7 @@ const journey = [
     year: "Now · 2026",
     title: "Local agents, adaptive learning & mobile products",
     description:
-      "Building DumbBots, Market Lens, the Economy Learning Dashboard, Workforce Hub, Detox Space and Nook—while turning industrial experience into reusable backend and AI logic.",
+      "Shipped DumbBots, Workforce Hub Lite, Detox Space and Nook; now developing Market Lens, the Economy Learning Dashboard and reusable industrial backend and AI logic.",
   },
 ];
 export default function EngineeringJourney() {

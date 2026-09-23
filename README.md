@@ -15,12 +15,12 @@ The portfolio of a mechanical maintenance engineer learning software, backend en
 - Pokémon Battle Simulator
 - Dance Crew Studio
 - DumbBots — local, review-driven AI engineering workflow powered by Ollama
+- Workforce Hub Lite — contractor workforce operations across web and Android
+- Detox Space — minimal native Android presence and invitation app
+- Nook — India-focused, friendship-first group discovery app
 
 ## Currently building
 
-- Workforce Hub Lite — simple contractor workforce operations for 50–100 users
-- Detox Space — native Android presence and real-world invitation app
-- Nook — India-focused, friendship-first group discovery
 - Market Lens — beginner-first company, sector and economy research AI
 - Economy Learning Dashboard — interactive statistics and adaptive economic learning
 - Plant Spare Intelligence — reusable backend and AI logic; clients provide their own data

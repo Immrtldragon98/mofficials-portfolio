@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     id: 6, slug: "workforce-hub", title: "Workforce Hub Lite", tagline: "Simple workforce operations for small contractors.",
     description: "A web and Android product for company onboarding, role-based staff registration, shifts, attendance, leave, work allocation and manager approvals.",
-    category: "Software", status: "Building", version: "v2.1", year: sharedYear,
+    category: "Software", status: "Completed", version: "v2.1", year: sharedYear,
     problem: "Small contractors need clear workforce control without enterprise HR complexity.", solution: "A company-code workflow connects HR, supervisors, managers and workers while keeping daily actions phone-friendly.",
     architecture: "Next.js and TypeScript with PostgreSQL and Drizzle, packaged for Android with Capacitor and sized for 50–100 users.",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Capacitor"], features: ["Company onboarding", "Manager assignments", "Attendance and leave approvals", "Audit logs and recovery"],
@@ -76,8 +76,8 @@ export const projects: Project[] = [
   },
   {
     id: 7, slug: "detox-space", title: "Detox Space", tagline: "Less scrolling. More real moments.",
-    description: "A minimal native Android app for trusted people to share calm availability and create small real-world invitations without feeds, likes or location tracking.",
-    category: "Software", status: "Building", version: "v0.3.1", year: sharedYear,
+    description: "A completed native Android app for trusted people to share calm availability and create small real-world invitations without feeds, likes or location tracking.",
+    category: "Software", status: "Completed", version: "v0.3.1", year: sharedYear,
     problem: "Mainstream social products optimise attention when close relationships need a quiet signal and a simple plan.", solution: "Three presence states, private connections and small invitations keep the product deliberately calm.",
     architecture: "Kotlin and Jetpack Compose with Room, DataStore and Hilt, connected to a TypeScript API, PostgreSQL, Firebase and Socket.IO.",
     technologies: ["Kotlin", "Jetpack Compose", "Firebase", "PostgreSQL"], features: ["Presence states", "Private connections", "Small invitations", "Updateable APK"],
@@ -87,8 +87,8 @@ export const projects: Project[] = [
   },
   {
     id: 8, slug: "nook", title: "Nook", tagline: "Small groups. Real plans. No swiping.",
-    description: "An India-focused Android friend-discovery product for people new to a city, organised around trusted groups and real activities rather than dating mechanics.",
-    category: "Software", status: "Building", version: "Alpha", year: sharedYear,
+    description: "A completed India-focused Android friend-discovery product for people new to a city, organised around trusted groups and real activities rather than dating mechanics.",
+    category: "Software", status: "Completed", version: "v1.0", year: sharedYear,
     problem: "People moving to a new city need safe ways to make friends without dating-style discovery or excessive exposure.", solution: "Interest groups, outing plans, consent-based QR connections and safety signals create a path to real plans.",
     architecture: "A TypeScript mobile product backed by Supabase with account, group, plan, profile and safety workflows.",
     technologies: ["TypeScript", "Supabase", "Android", "Product Safety"], features: ["Interest groups", "Outing plans", "QR connections", "Safety model"],
