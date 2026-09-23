@@ -40,7 +40,7 @@ export default function EngineeringProcess() {
           04
         </p>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
           Engineering Process
         </p>
 

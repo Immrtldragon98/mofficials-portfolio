@@ -4,13 +4,13 @@ interface Props {
 
 const colors = {
   Completed:
-    "bg-green-100 text-green-700",
+    "border-neutral-900 bg-neutral-900 text-white",
 
   Building:
-    "bg-blue-100 text-blue-700",
+    "border-neutral-400 bg-transparent text-neutral-800",
 
   Planned:
-    "bg-neutral-200 text-neutral-700",
+    "border-neutral-300 bg-neutral-100 text-neutral-600",
 };
 
 export default function StatusBadge({
@@ -18,7 +18,7 @@ export default function StatusBadge({
 }: Props) {
   return (
     <span
-      className={`rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-wider ${colors[status]}`}
+      className={`inline-flex rounded-md border px-3 py-1 text-xs font-semibold uppercase tracking-wider ${colors[status]}`}
     >
       {status}
     </span>

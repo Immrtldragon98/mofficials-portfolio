@@ -34,7 +34,7 @@ export default function EngineeringStats() {
       <Container>
         <div className="overflow-hidden rounded-[20px] border border-neutral-200 bg-white">
           <div className="flex items-center justify-between border-b border-neutral-200 px-6 py-4">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-600">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-neutral-500">
               Engineering Status
             </p>
 
@@ -58,7 +58,7 @@ export default function EngineeringStats() {
                     {stat.value}
                   </span>
 
-                  <span className="mt-2 h-2 w-2 rounded-full bg-emerald-500" />
+                  <span className="mt-2 h-2 w-2 rounded-lg border border-neutral-300 bg-transparent0" />
                 </div>
 
                 <p className="mt-5 text-xs font-semibold uppercase tracking-[0.15em]">

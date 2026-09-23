@@ -17,7 +17,7 @@ export default function ProjectLinks({
           <a
             href={project.live}
             target="_blank"
-            className="rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-blue-600"
+            className="rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-neutral-800"
             rel="noreferrer"
           >
             Live Demo
@@ -28,7 +28,7 @@ export default function ProjectLinks({
           <a
             href={project.github}
             target="_blank"
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
+            className="rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
             rel="noreferrer"
           >
             GitHub
@@ -39,7 +39,7 @@ export default function ProjectLinks({
           <a
             href={project.documentation}
             target="_blank"
-            className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
+            className="rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
             rel="noreferrer"
           >
             Documentation

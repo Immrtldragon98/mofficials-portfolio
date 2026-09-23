@@ -33,7 +33,7 @@ export default function EngineeringJourney() {
           03
         </p>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
           Journey
         </p>
 
@@ -49,7 +49,7 @@ export default function EngineeringJourney() {
               className="grid gap-4 border-l-2 border-neutral-200 pl-5 md:grid-cols-[160px_1fr] md:gap-8 md:pl-8"
             >
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.15em] text-blue-600 md:text-base">
+                <p className="text-sm font-bold uppercase tracking-[0.15em] text-neutral-500 md:text-base">
                   {step.year}
                 </p>
               </div>

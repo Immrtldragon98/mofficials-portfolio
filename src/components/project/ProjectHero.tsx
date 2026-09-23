@@ -9,7 +9,7 @@ export default function ProjectHero({ project }: Props) {
     <section className="border-b border-neutral-200">
       <div className="mx-auto max-w-[1440px] px-4 py-16 md:px-10 md:py-24 lg:px-12 lg:py-28">
 
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
           {project.status} · {project.version}
         </p>
 

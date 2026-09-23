@@ -11,7 +11,7 @@ export default function ProjectOverview({
 
         <div className="lg:col-span-3">
 
-          <p className="text-sm uppercase tracking-[0.35em] text-blue-600">
+          <p className="text-sm uppercase tracking-[0.35em] text-neutral-500">
             Overview
           </p>
 

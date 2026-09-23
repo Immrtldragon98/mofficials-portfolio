@@ -11,7 +11,7 @@ export default function Architecture({
     <section className="border-t border-neutral-200 py-16 md:py-20">
       <div className="grid gap-10 lg:grid-cols-[220px_1fr]">
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-600">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-neutral-500">
             Architecture
           </p>
         </div>

@@ -13,7 +13,7 @@ export default function Mission() {
 
           <div className="lg:col-span-10">
 
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
               Mission
             </p>
 

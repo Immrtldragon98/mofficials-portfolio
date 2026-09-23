@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         {/* Hero */}
         <section className="border-b border-neutral-200 bg-neutral-50 py-16 md:py-24">
           <Container>
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-blue-600">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-neutral-500">
               Portfolio
             </p>
 
@@ -145,7 +145,7 @@ export default function ProjectsPage() {
 
             <Link
               href="/contact"
-              className="mt-10 inline-flex rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:bg-neutral-200"
+              className="mt-10 inline-flex rounded-lg border border-white/45 bg-transparent px-8 py-4 font-semibold text-white transition hover:border-white hover:bg-white/10"
             >
               Get in Touch
             </Link>

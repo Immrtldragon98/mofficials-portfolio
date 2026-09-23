@@ -13,7 +13,7 @@ export default function AboutPage() {
           <BackButton />
 
           <div className="mt-16 max-w-6xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">
               About / 01
             </p>
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
         <section className="mx-auto grid max-w-[1440px] gap-12 px-6 py-20 md:px-10 lg:grid-cols-12 lg:px-12">
           <div className="lg:col-span-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-neutral-500">
               Working principle
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
             <Link
               href="/projects"
-              className="mt-10 inline-flex rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-600"
+              className="mt-10 inline-flex rounded-lg bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
             >
               Explore the work →
             </Link>

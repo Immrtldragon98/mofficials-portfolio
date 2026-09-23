@@ -6,7 +6,7 @@ export default function CTA() {
       <div className="mx-auto max-w-[1440px] overflow-hidden rounded-[28px] bg-black px-7 py-14 text-white md:px-12 lg:px-14">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-blue-400">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/55">
               Build Log / End
             </p>
 
@@ -24,7 +24,7 @@ export default function CTA() {
 
             <Link
               href="/projects"
-              className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-7 text-sm font-semibold text-black transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-500 hover:text-white"
+              className="mt-8 inline-flex h-12 items-center justify-center rounded-lg border border-white/45 bg-transparent px-7 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
             >
               Explore Project Logs →
             </Link>

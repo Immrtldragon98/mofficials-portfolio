@@ -9,7 +9,7 @@ export default function TechStack({
     <section className="border-t border-neutral-200">
       <div className="mx-auto max-w-[1440px] px-4 py-16 md:px-10 md:py-24 lg:px-12">
 
-        <p className="text-sm uppercase tracking-[0.35em] text-blue-600">
+        <p className="text-sm uppercase tracking-[0.35em] text-neutral-500">
           Technology
         </p>
 
@@ -18,7 +18,7 @@ export default function TechStack({
           {project.technologies.map((tech) => (
             <span
               key={tech}
-            className="rounded-full border px-4 py-2 text-sm sm:px-5"
+            className="rounded-lg border px-4 py-2 text-sm sm:px-5"
             >
               {tech}
             </span>

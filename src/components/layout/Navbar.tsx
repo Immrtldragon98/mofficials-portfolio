@@ -30,7 +30,7 @@ export default function Navbar() {
             MOFFICIALS
           </span>
 
-          <span className="mt-0.5 text-[7px] uppercase tracking-[0.16em] text-neutral-500 transition-colors group-hover:text-blue-600 sm:text-[8px] sm:tracking-[0.2em]">
+          <span className="mt-0.5 text-[7px] uppercase tracking-[0.16em] text-neutral-500 transition-colors group-hover:text-neutral-500 sm:text-[8px] sm:tracking-[0.2em]">
             Product & Engineering Studio
           </span>
         </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Contact */}
         <Link
           href="/contact"
-          className="hidden h-10 items-center justify-center rounded-full bg-black px-5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-600 md:inline-flex"
+          className="hidden h-10 items-center justify-center rounded-lg bg-black px-5 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-neutral-800 md:inline-flex"
         >
           Contact →
         </Link>

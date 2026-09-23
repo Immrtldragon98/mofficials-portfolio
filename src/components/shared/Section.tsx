@@ -31,7 +31,7 @@ export default function Section({
             )}
 
             {label && (
-              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-blue-600">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-neutral-500">
                 {label}
               </span>
             )}

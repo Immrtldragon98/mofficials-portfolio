@@ -7,7 +7,7 @@ export default function CurrentFocus() {
           05
         </p>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">
           Current Focus
         </p>
 
@@ -27,19 +27,19 @@ export default function CurrentFocus() {
 
           <div className="mt-12 flex flex-wrap gap-4">
 
-            <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+            <span className="rounded-md border border-neutral-900 bg-neutral-900 px-4 py-2 text-sm font-semibold text-white">
               Building
             </span>
 
-            <span className="rounded-full border px-4 py-2 text-sm">
+            <span className="rounded-lg border px-4 py-2 text-sm">
               Multi-Agent AI
             </span>
 
-            <span className="rounded-full border px-4 py-2 text-sm">
+            <span className="rounded-lg border px-4 py-2 text-sm">
               CAD
             </span>
 
-            <span className="rounded-full border px-4 py-2 text-sm">
+            <span className="rounded-lg border px-4 py-2 text-sm">
               Manufacturing
             </span>
 

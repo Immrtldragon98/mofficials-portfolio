@@ -57,7 +57,7 @@ export default function UpcomingProjects() {
 
       <Link
         href="/projects"
-        className="mt-8 inline-flex rounded-full border border-neutral-300 px-5 py-3 text-sm font-medium transition hover:border-black"
+        className="mt-8 inline-flex rounded-lg border border-neutral-300 px-5 py-3 text-sm font-medium transition hover:border-black"
       >
         View full project pipeline →
       </Link>
