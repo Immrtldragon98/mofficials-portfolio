@@ -1,9 +1,9 @@
 interface Props {
-  status: "Completed" | "Building" | "Planned";
+  status: "Built" | "Building" | "Planned";
 }
 
 const colors = {
-  Completed:
+  Built:
     "border-neutral-900 bg-neutral-900 text-white",
 
   Building:

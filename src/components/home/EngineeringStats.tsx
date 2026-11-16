@@ -8,8 +8,8 @@ import {
 const stats = [
   {
     value: completedProjects.length.toString().padStart(2, "0"),
-    label: "Completed",
-    detail: "Products shipped",
+    label: "Built",
+    detail: "Working milestones",
   },
   {
     value: buildingProjects.length.toString().padStart(2, "0"),
@@ -58,7 +58,7 @@ export default function EngineeringStats() {
                     {stat.value}
                   </span>
 
-                  <span className="mt-2 h-2 w-2 rounded-lg border border-neutral-300 bg-transparent0" />
+                  <span className="mt-2 h-2 w-2 rounded-lg border border-neutral-300 bg-transparent" />
                 </div>
 
                 <p className="mt-5 text-xs font-semibold uppercase tracking-[0.15em]">

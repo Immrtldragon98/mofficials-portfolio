@@ -1,5 +1,5 @@
 export type ProjectStatus =
-  | "Completed"
+  | "Built"
   | "Building"
   | "Planned";
 
@@ -60,6 +60,8 @@ export interface Project {
   github?: string;
   live?: string;
   documentation?: string;
+
+  releaseNote?: string;
 
   // Portfolio
   featured?: boolean;

@@ -1,9 +1,10 @@
+import { completedProjects, buildingProjects, plannedProjects } from "@/lib/projects";
 import Container from "@/components/layout/Container";
 
 const stats = [
-  ["03", "Completed"],
-  ["02", "Building"],
-  ["03", "Planned"],
+  [String(completedProjects.length).padStart(2, "0"), "Built"],
+  [String(buildingProjects.length).padStart(2, "0"), "Building"],
+  [String(plannedProjects.length).padStart(2, "0"), "Planned"],
   ["∞", "Learning"],
 ];
 

@@ -1,161 +1,20 @@
-import Link from "next/link";
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/shared/ProjectCard";
+import ProjectExplorer from "@/components/project/ProjectExplorer";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 
-export default function ProjectsPage() {
-  const completed = projects.filter((p) => p.status === "Completed");
-  const building = projects.filter((p) => p.status === "Building");
-  const planned = projects.filter((p) => p.status === "Planned");
-
-  return (
-    <>
-      <Navbar />
-
-      <main>
-
-        {/* Hero */}
-        <section className="border-b border-neutral-200 bg-neutral-50 py-16 md:py-24">
-          <Container>
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-neutral-500">
-              Portfolio
-            </p>
-
-            <h1 className="mt-6 text-5xl font-black tracking-[-0.055em] sm:text-6xl md:text-7xl">
-              Engineering Projects
-            </h1>
-
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-neutral-600">
-              Every project begins with an idea, evolves through research,
-              architecture, development, AI-assisted workflows, and ends as a
-              deployable product. This page documents that journey.
-            </p>
-
-            <div className="mt-10 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4">
-              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
-                <p className="text-3xl font-bold">{projects.length}</p>
-                <p className="text-sm text-neutral-500">Projects</p>
-              </div>
-
-              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
-                <p className="text-3xl font-bold">{completed.length}</p>
-                <p className="text-sm text-neutral-500">Completed</p>
-              </div>
-
-              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
-                <p className="text-3xl font-bold">{building.length}</p>
-                <p className="text-sm text-neutral-500">Building</p>
-              </div>
-
-              <div className="rounded-xl border bg-white px-4 py-4 sm:px-5">
-                <p className="text-3xl font-bold">{planned.length}</p>
-                <p className="text-sm text-neutral-500">Planned</p>
-              </div>
-            </div>
-          </Container>
-        </section>
-
-        {/* Completed */}
-        <section className="py-16 md:py-24">
-          <Container>
-
-            <h2 className="text-4xl font-bold">
-              Completed Products
-            </h2>
-
-            <p className="mt-3 text-neutral-600">
-              Production-ready applications and engineering tools.
-            </p>
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
-              {completed.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                />
-              ))}
-            </div>
-
-          </Container>
-        </section>
-
-        {/* Building */}
-        <section className="bg-neutral-50 py-16 md:py-24">
-          <Container>
-
-            <h2 className="text-4xl font-bold">
-              Currently Building
-            </h2>
-
-            <p className="mt-3 text-neutral-600">
-              Projects under active development.
-            </p>
-
-            <div className="mt-12 grid gap-8">
-              {building.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                />
-              ))}
-            </div>
-
-          </Container>
-        </section>
-
-        {/* Upcoming */}
-        <section className="py-16 md:py-24">
-          <Container>
-
-            <h2 className="text-4xl font-bold">
-              Upcoming Ideas
-            </h2>
-
-            <p className="mt-3 text-neutral-600">
-              Research concepts that will become future products.
-            </p>
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
-              {planned.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                />
-              ))}
-            </div>
-
-          </Container>
-        </section>
-
-        {/* CTA */}
-        <section className="border-t border-neutral-200 bg-black py-24 text-white">
-          <Container>
-
-            <h2 className="text-4xl font-bold tracking-[-0.04em] md:text-5xl">
-              Interested in how these products were built?
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-lg text-neutral-300">
-              Every project includes architecture, frontend, backend,
-              AI workflow, technical decisions, milestones, GitHub,
-              deployment links, and lessons learned.
-            </p>
-
-            <Link
-              href="/contact"
-              className="mt-10 inline-flex rounded-lg border border-white/45 bg-transparent px-8 py-4 font-semibold text-white transition hover:border-white hover:bg-white/10"
-            >
-              Get in Touch
-            </Link>
-
-          </Container>
-        </section>
-
-      </main>
-
-      <Footer />
-    </>
-  );
+export default async function ProjectsPage({ searchParams }: { searchParams: Promise<{ category?: string; status?: string }> }) {
+  const params = await searchParams;
+  const category = projects.some(p => p.category === params.category) ? params.category : "All";
+  const status = ["Built", "Building", "Planned"].includes(params.status ?? "") ? params.status : "All";
+  return <><Navbar /><main>
+    <section className="border-b border-neutral-200 bg-neutral-50 py-14 md:py-20"><Container>
+      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">Portfolio / Updated 16 November 2026</p>
+      <h1 className="mt-6 text-5xl font-black tracking-[-0.055em] sm:text-6xl md:text-7xl">Projects & experiments</h1>
+      <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-600">Software, mobile companions, AI systems and market tools. Explore the problem, architecture and current milestone behind each project.</p>
+      <p className="mt-4 max-w-3xl text-sm leading-6 text-neutral-600">Built means a working milestone was delivered. Building means active development; Planned means a research concept. Each case study notes known testing or release gaps.</p>
+    </Container></section>
+    <section className="py-10 md:py-16"><Container><ProjectExplorer key={`${category}-${status}`} initialCategory={category} initialStatus={status} /></Container></section>
+  </main><Footer /></>;
 }

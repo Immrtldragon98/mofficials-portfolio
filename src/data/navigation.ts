@@ -1,22 +1,10 @@
 export const navigation = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-  {
-    name: "Roadmap",
-    href: "/roadmap",
-  },
-  {
-    name: "About",
-    href: "/about",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  { name: "Projects", href: "/projects" },
+  { name: "About", href: "/about" },
+  { name: "Journal", href: "/roadmap" },
+  { name: "Contact", href: "/contact" },
 ];
+
+export function isActiveRoute(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}

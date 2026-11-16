@@ -3,15 +3,7 @@ import Container from "@/components/layout/Container";
 import { projects } from "@/data/projects";
 
 export default function FeaturedProjects() {
-  const featuredSlugs = [
-    "wealthplay",
-    "dance-crew-studio",
-    "market-memory",
-  ];
-
-  const featuredProjects = featuredSlugs
-    .map((slug) => projects.find((project) => project.slug === slug))
-    .filter((project) => project !== undefined);
+  const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
 
   const featured = featuredProjects[0];
   const secondary = featuredProjects.slice(1);
@@ -97,7 +89,7 @@ export default function FeaturedProjects() {
                         {featured.title}
                       </span>
 
-                      <span className="h-2 w-2 rounded-lg border border-neutral-300 bg-transparent0" />
+                      <span className="h-2 w-2 rounded-lg border border-neutral-300 bg-transparent" />
                     </div>
 
                     <div className="mt-8 space-y-3">
