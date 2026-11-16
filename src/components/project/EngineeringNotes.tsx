@@ -7,6 +7,8 @@ interface EngineeringNotesProps {
 export default function EngineeringNotes({
   project,
 }: EngineeringNotesProps) {
+  if (!project.lessons?.length && !project.challenges?.length) return null;
+
   return (
     <section className="border-t border-neutral-200 py-16 md:py-20">
       <div className="grid gap-10 lg:grid-cols-[220px_1fr]">

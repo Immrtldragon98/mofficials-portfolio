@@ -28,6 +28,8 @@ export default function ProjectCard({
         {project.description}
       </p>
 
+      {project.releaseNote && <p className="mt-4 text-sm leading-6 text-neutral-600">{project.releaseNote}</p>}
+
       <div className="mt-8 flex flex-wrap gap-2 sm:mt-10">
         {project.technologies.slice(0, 4).map((tech) => (
           <span

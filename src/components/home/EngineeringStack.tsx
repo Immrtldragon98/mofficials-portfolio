@@ -1,8 +1,9 @@
+import { completedProjects, plannedProjects } from "@/lib/projects";
 import Container from "@/components/layout/Container";
 
 const stats = [
-  ["Products Built", "4"],
-  ["Upcoming Ideas", "3"],
+  ["Products Built", String(completedProjects.length)],
+  ["Upcoming Ideas", String(plannedProjects.length)],
   ["Languages", "C++ • Python • TypeScript"],
   ["AI Assisted Workflows", "Every Project"],
 ];

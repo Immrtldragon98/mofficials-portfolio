@@ -17,10 +17,10 @@ export default function ProjectLinks({
           <a
             href={project.live}
             target="_blank"
-            className="rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-neutral-800"
-            rel="noreferrer"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-neutral-800"
+            rel="noopener noreferrer"
           >
-            Live Demo
+            Open website ↗
           </a>
         )}
 
@@ -28,10 +28,10 @@ export default function ProjectLinks({
           <a
             href={project.github}
             target="_blank"
-            className="rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
-            rel="noreferrer"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
+            rel="noopener noreferrer"
           >
-            GitHub
+            View source ↗
           </a>
         )}
 
@@ -39,10 +39,10 @@ export default function ProjectLinks({
           <a
             href={project.documentation}
             target="_blank"
-            className="rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
-            rel="noreferrer"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-neutral-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-black"
+            rel="noopener noreferrer"
           >
-            Documentation
+            Read documentation ↗
           </a>
         )}
       </div>

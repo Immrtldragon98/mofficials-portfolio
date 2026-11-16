@@ -1,3 +1,4 @@
+import CopyEmail from "@/components/shared/CopyEmail";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -38,7 +39,7 @@ export default function ContactPage() {
                   className="flex min-w-0 items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-4 transition hover:border-black sm:px-5"
                 >
                   <span className="min-w-0">
-                    <span className="block font-medium">Email</span>
+                    <span className="block font-medium">Open email app</span>
                     <span className="mt-1 block break-all text-xs text-neutral-500">
                       vyvsyadav98@proton.me
                     </span>
@@ -60,6 +61,10 @@ export default function ContactPage() {
                   </span>
                   <span>↗</span>
                 </a>
+
+                <CopyEmail />
+
+                <a href="https://github.com/logan9e7" target="_blank" rel="noopener noreferrer" className="flex min-h-12 items-center justify-between rounded-xl border border-neutral-200 px-5 py-4 hover:border-black"><span><span className="block font-medium">GitHub · current apps</span><span className="mt-1 block text-xs text-neutral-500">@logan9e7</span></span><span aria-hidden="true">↗</span></a>
 
                 <Link
                   href="/projects"

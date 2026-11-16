@@ -44,11 +44,11 @@ export default function Footer() {
 
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
               <span className="font-mono text-xs font-bold tracking-[0.26em] text-white">
-                LOGBOOK
+                MOFFICIALS
               </span>
 
               <span className="text-xs text-white/55">
-                Engineering Journal
+                Product & Engineering Studio
               </span>
             </div>
 

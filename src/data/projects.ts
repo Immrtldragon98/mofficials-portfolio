@@ -6,7 +6,7 @@ export const projects: Project[] = [
   {
     id: 1, slug: "wealthplay", title: "WealthPlay Pro", tagline: "Learn wealth creation by changing the numbers yourself.",
     description: "My first shipped app, rebuilt as a beginner-friendly financial simulation product for cash flow, compound growth, inflation, goals and long-term decisions.",
-    category: "Finance", status: "Completed", version: "Pro", year: sharedYear,
+    category: "Finance", status: "Built", version: "Pro", year: sharedYear,
     problem: "Personal finance is difficult to learn from static advice because beginners cannot see how one decision changes the long-term result.",
     solution: "Interactive simulations make assumptions visible and let users compare choices without risking real money.",
     architecture: "A calculation-first product with deterministic financial models, C++ and Python experiments, and an accessible web experience.",
@@ -15,12 +15,13 @@ export const projects: Project[] = [
     journey: ["Started as Money River experiments in C++ and Python.", "Turned the models into the first WealthPlay app.", "Learned that beginners need explanations beside every number.", "Evolved the product into WealthPlay Pro."],
     lessons: ["Clarity matters more than feature count in financial products.", "Calculations should remain separate from AI explanations."],
     roadmap: ["Explainable AI coach", "Scenario comparison", "Privacy-first planning"],
-    github: "https://github.com/Immrtldragon98/wealthplay_pro", featured: true,
+    github: "https://github.com/Immrtldragon98/wealthplay_pro",
   },
   {
-    id: 2, slug: "market-memory", title: "Market Memory", tagline: "A decision-memory system for investors and traders.",
-    description: "A completed mobile-first journal that preserves observations, beliefs, decisions and outcomes with watchlists, ranked search and durable price snapshots.",
-    category: "Finance", status: "Completed", version: "v3.0", year: sharedYear,
+    id: 2, slug: "market-memory", title: "Market Memory (earlier version)", tagline: "A decision-memory system for investors and traders.",
+    description: "An earlier mobile-first journal that preserves observations, beliefs, decisions and outcomes with watchlists, ranked search and durable price snapshots.",
+    category: "Finance", status: "Built", version: "v3.0", year: sharedYear,
+    releaseNote: "Earlier project case study. Its previous demo returned 404 on 16 November 2026; current work is documented separately under Market Memory Pro.",
     problem: "Market decisions lose value when the original observation, price and reasoning are scattered or forgotten.",
     solution: "One calm workflow records the decision trail and compresses price history into useful weekly, monthly and yearly review.",
     architecture: "React Native and TypeScript with a FastAPI modular backend, authentication, PostgreSQL and durable price capture.",
@@ -29,33 +30,33 @@ export const projects: Project[] = [
     journey: ["Began as a simple trading journal.", "The first architecture became slow and difficult to extend.", "Reworked the data model and search for scale.", "Finished v3 as a focused decision-memory product."],
     lessons: ["A journal becomes useful when it preserves context, not only outcomes.", "A failed architecture can reveal the correct product boundary."],
     roadmap: ["Decision-quality insights", "Broader market-data coverage"],
-    github: "https://github.com/Immrtldragon98/Market_memory_new", live: "https://market-memory-new.vercel.app", featured: true,
+    github: "https://github.com/Immrtldragon98/Market_memory_new",
   },
   {
     id: 3, slug: "pokemon-simulator", title: "Pokémon Battle Simulator", tagline: "Fast browser battles with tactical turn-based choices.",
     description: "A deployed browser game with Pokémon and move selection, type-aware combat, readable feedback and a focused battle loop.",
-    category: "Games", status: "Completed", version: "v1.0", year: sharedYear,
+    category: "Games", status: "Built", version: "v1.0", year: sharedYear,
     problem: "Turn-based combat needs enough depth to reward choices without hiding the rules.", solution: "A lightweight battle loop makes state, damage and type decisions clear on every turn.",
     architecture: "A browser game served through a small Node.js and Express production server.",
     technologies: ["JavaScript", "Node.js", "Express", "Game Logic"], features: ["Turn-based battles", "Move selection", "Type-aware combat", "Responsive UI"],
     journey: ["Defined the smallest playable battle loop.", "Implemented deterministic combat state.", "Improved feedback and mobile layout.", "Deployed the game for browser play."],
     lessons: ["Immediate feedback makes rule-heavy systems understandable.", "Small games are strong state-management exercises."], roadmap: ["Expanded roster", "Smarter opponents"],
-    github: "https://github.com/Immrtldragon98/pokemon-simulator", live: "https://pokemon-simulator-three.vercel.app", featured: true,
+    github: "https://github.com/Immrtldragon98/pokemon-simulator", live: "https://pokemon-simulator-three.vercel.app",
   },
   {
     id: 4, slug: "dance-crew-studio", title: "Dance Crew Studio", tagline: "A keyboard-controlled nine-member 3D dance crew.",
     description: "A completed browser-based 3D stage with five male and four female characters, formations, direct controls and a street-cyberpunk direction.",
-    category: "Games", status: "Completed", version: "v1.0", year: sharedYear,
+    category: "Games", status: "Built", version: "v1.0", year: sharedYear,
     problem: "Multi-character dance experiences feel artificial when performers float or move like puppets.", solution: "Grounded models, reusable animation states, formations and camera composition make the crew feel present.",
     architecture: "A web 3D scene with GLB assets, animation state control, keyboard input, formations and stage lighting.",
     technologies: ["3D Web", "GLB", "Animation", "JavaScript"], features: ["Nine dancers", "Keyboard controls", "Duo, trio and crew formations", "Grounded movement"],
-    journey: ["Designed a nine-character crew.", "Tested FBX and GLB animation assets.", "Fixed single-move, material and ground-contact issues.", "Completed the interactive stage."],
+    journey: ["Designed a nine-character crew.", "Tested FBX and GLB animation assets.", "Fixed single-move, material and ground-contact issues.", "Built the interactive stage."],
     lessons: ["Ground contact matters more than visual complexity.", "Reusable animation states make formations easier to extend."], roadmap: ["More dance packs", "Custom crew builder"],
   },
   {
     id: 5, slug: "dumbbots", title: "DumbBots", tagline: "A local AI team that plans, builds, tests and reviews software.",
     description: "A free, local-first engineering workflow powered by Ollama that separates planning, architecture, building, QA, repair, publishing and deployment.",
-    category: "AI", status: "Completed", version: "v1.0", year: sharedYear,
+    category: "AI", status: "Built", version: "v1.0", year: sharedYear,
     problem: "One AI agent often mixes planning, implementation and review, making mistakes difficult to trace.", solution: "A controlled multi-role workflow uses approval gates, test evidence and review reports before publishing.",
     architecture: "Python CLI orchestration around local Ollama models with Lead, Architect, Builder, QA, Reviewer and Deployment roles.",
     technologies: ["Python", "Ollama", "CLI", "FastAPI"], features: ["Plan-before-build", "QA and repair loop", "Reviewer acceptance", "Render deployment assistant"],
@@ -66,18 +67,19 @@ export const projects: Project[] = [
   {
     id: 6, slug: "workforce-hub", title: "Workforce Hub Lite", tagline: "Simple workforce operations for small contractors.",
     description: "A web and Android product for company onboarding, role-based staff registration, shifts, attendance, leave, work allocation and manager approvals.",
-    category: "Software", status: "Completed", version: "v2.1", year: sharedYear,
+    category: "Software", status: "Built", version: "v2.1", year: sharedYear,
+    releaseNote: "Earlier delivered milestone. The previous hosted demo returned 404 on 16 November 2026; live availability needs recovery and verification.",
     problem: "Small contractors need clear workforce control without enterprise HR complexity.", solution: "A company-code workflow connects HR, supervisors, managers and workers while keeping daily actions phone-friendly.",
     architecture: "Next.js and TypeScript with PostgreSQL and Drizzle, packaged for Android with Capacitor and sized for 50–100 users.",
     technologies: ["Next.js", "TypeScript", "PostgreSQL", "Capacitor"], features: ["Company onboarding", "Manager assignments", "Attendance and leave approvals", "Audit logs and recovery"],
     journey: ["Began as a large manpower system.", "Reduced scope for small contractors.", "Added company and role hierarchy.", "Hardened login and shipped an updateable APK."],
     lessons: ["Daily operational actions should take seconds.", "A narrower audience produces a clearer product."], roadmap: ["Real-user pilot", "Monitoring", "Reporting polish"],
-    github: "https://github.com/Immrtldragon98/Manpower_Management_App", live: "https://workforce-hub-production.up.railway.app/",
+    github: "https://github.com/Immrtldragon98/Manpower_Management_App",
   },
   {
     id: 7, slug: "detox-space", title: "Detox Space", tagline: "Less scrolling. More real moments.",
     description: "A completed native Android app for trusted people to share calm availability and create small real-world invitations without feeds, likes or location tracking.",
-    category: "Software", status: "Completed", version: "v0.3.1", year: sharedYear,
+    category: "Software", status: "Built", version: "v0.3.1", year: sharedYear,
     problem: "Mainstream social products optimise attention when close relationships need a quiet signal and a simple plan.", solution: "Three presence states, private connections and small invitations keep the product deliberately calm.",
     architecture: "Kotlin and Jetpack Compose with Room, DataStore and Hilt, connected to a TypeScript API, PostgreSQL, Firebase and Socket.IO.",
     technologies: ["Kotlin", "Jetpack Compose", "Firebase", "PostgreSQL"], features: ["Presence states", "Private connections", "Small invitations", "Updateable APK"],
@@ -87,11 +89,12 @@ export const projects: Project[] = [
   },
   {
     id: 8, slug: "nook", title: "Nook", tagline: "Small groups. Real plans. No swiping.",
-    description: "A completed India-focused Android friend-discovery product for people new to a city, organised around trusted groups and real activities rather than dating mechanics.",
-    category: "Software", status: "Completed", version: "v1.0", year: sharedYear,
+    description: "An India-focused mobile friend-discovery prototype for people new to a city, organised around trusted groups and real activities rather than dating mechanics.",
+    category: "Software", status: "Building", version: "v1.3.0", year: sharedYear,
+    releaseNote: "Test APK available. Two-phone acceptance, verification, moderation and store submission remain pending.",
     problem: "People moving to a new city need safe ways to make friends without dating-style discovery or excessive exposure.", solution: "Interest groups, outing plans, consent-based QR connections and safety signals create a path to real plans.",
     architecture: "A TypeScript mobile product backed by Supabase with account, group, plan, profile and safety workflows.",
-    technologies: ["TypeScript", "Supabase", "Android", "Product Safety"], features: ["Interest groups", "Outing plans", "QR connections", "Safety model"],
+    technologies: ["Expo", "TypeScript", "SQLite", "Supabase"], features: ["Interest groups", "Outing plans", "QR connections", "Safety model"],
     journey: ["Defined it as friendship-first.", "Designed groups around real activities.", "Added safer identity and QR connection flows.", "Prepared the Android build for testing."],
     lessons: ["Safety belongs in the core loop.", "Clear navigation is critical across groups, plans and messages."], roadmap: ["User testing", "Moderation", "City discovery"],
     github: "https://github.com/Immrtldragon98/Nook",
@@ -138,6 +141,244 @@ export const projects: Project[] = [
     journey: ["Started from digital-twin history.", "Expanded from equipment to components.", "Added reliability logic and document grounding.", "Separated reusable AI logic from client data."],
     lessons: ["Engineering AI must cite evidence.", "Hierarchy and history are the reliability foundation."], roadmap: ["BOM ingestion", "Engineer learning", "Local deployment"],
     github: "https://github.com/Immrtldragon98/Industrial_Digital_twin",
+  },
+  {
+    "id": 17,
+    "slug": "form-strength",
+    "title": "Form & Strength",
+    "tagline": "An offline companion for food, water and strength habits.",
+    "description": "Daily food, protein, water, habits and training in an Android app, with typed meal entry and editable portions.",
+    "category": "Software",
+    "status": "Built",
+    "version": "1.5.2",
+    "year": 2026,
+    "problem": "Daily tracking becomes difficult when logging requires too many steps.",
+    "solution": "Quick water actions, repeatable foods and reviewed meal estimates keep everyday logging simple.",
+    "architecture": "Bundled HTML and JavaScript in an Android WebView, with native Java SQLite storage. Optional Gemini meal estimation and Health Connect use native integrations.",
+    "technologies": [
+      "Android",
+      "Java",
+      "JavaScript",
+      "SQLite"
+    ],
+    "features": [
+      "Typed meals and Indian food references",
+      "Water and no-added-sugar habits",
+      "Saved foods and editable portions",
+      "JSON backup and restore"
+    ],
+    "github": "https://github.com/logan9e7/Form-Strength",
+    "releaseNote": "APK 1.5.2 documented. Physical-device acceptance and live AI/Health Connect verification remain pending.",
+    "roadmap": [
+      "Expand reviewed Indian-food coverage",
+      "Physical Android acceptance",
+      "Simpler daily logging"
+    ],
+    "featured": true
+  },
+  {
+    "id": 18,
+    "slug": "market-memory-pro",
+    "title": "Market Memory Pro",
+    "tagline": "Preserve the reasoning behind a market decision.",
+    "description": "A journal and alert system connecting observations, decisions and outcomes with evidence-based review and explicitly approved paper orders.",
+    "category": "Finance",
+    "status": "Building",
+    "version": "Development foundation",
+    "year": 2026,
+    "problem": "Trading notes lose value when prices, assumptions and outcomes are disconnected.",
+    "solution": "Owner-scoped records preserve a decision trail for later strategy review.",
+    "architecture": "FastAPI serves a same-origin web interface. SQLite supports local development and PostgreSQL supports hosted persistence. Optional AI insights reference stored evidence.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "JavaScript"
+    ],
+    "features": [
+      "Decision journal and snapshots",
+      "Recorded-price alerts",
+      "Strategy outcome review",
+      "Idempotent paper-order approval"
+    ],
+    "github": "https://github.com/logan9e7/Market_memory_pro",
+    "releaseNote": "Current repository documents a Python foundation. Live-feed coverage, C++ completion and production readiness are not established by this review.",
+    "roadmap": [
+      "Verify market-data coverage",
+      "Reconcile hybrid-engine status",
+      "Deployment and account-flow acceptance"
+    ],
+    "featured": true
+  },
+  {
+    "id": 19,
+    "slug": "asset-tracking-intelligence",
+    "title": "Asset Tracking Intelligence",
+    "tagline": "Equipment history that stays connected to the asset.",
+    "description": "A reusable asset-intelligence platform for identity, relationships, installation history, maintenance and reliability, starting with a digital stand register.",
+    "category": "Industrial Software",
+    "status": "Building",
+    "version": "Shared asset core",
+    "year": 2026,
+    "problem": "Equipment and component changes are difficult to trace across disconnected registers.",
+    "solution": "A shared asset core connects lifecycle events, components, maintenance records and reliability observations.",
+    "architecture": "A common registry supports DSIR, RMIR, MIR, DIR and SSIR modules. The documented development stack runs a web frontend and API through Docker Compose.",
+    "technologies": [
+      "Python",
+      "Web UI",
+      "Asset Modelling",
+      "Docker"
+    ],
+    "features": [
+      "Five register types",
+      "Component relationships",
+      "Installation and campaign history",
+      "Inventory and maintenance records"
+    ],
+    "github": "https://github.com/Immrtldragon98/Asset_tracking_intelligence",
+    "releaseNote": "Module scope is based on repository documentation. Live deployment and operational acceptance were not verified in this portfolio update.",
+    "roadmap": [
+      "Validate cross-register workflows",
+      "Complete equipment catalogs",
+      "Verify deployment and access controls"
+    ],
+    "featured": true
+  },
+  {
+    "id": 20,
+    "slug": "humanos",
+    "title": "HumanOS",
+    "tagline": "Personal memory that can be corrected as people change.",
+    "description": "A conversational memory product with private observations, provisional hypotheses and a correction history, without personality questionnaires.",
+    "category": "AI",
+    "status": "Building",
+    "version": "1.1.0 source",
+    "year": 2026,
+    "problem": "A static profile misses context and cannot distinguish a wrong interpretation from a person changing.",
+    "solution": "Preserve evidence and revisions while keeping uncertain interpretations provisional.",
+    "architecture": "Vinext/React on Cloudflare Workers with Sites-provisioned D1, a server-side text classifier and optional external language-model processing.",
+    "technologies": [
+      "React",
+      "Cloudflare Workers",
+      "D1",
+      "Text Classification"
+    ],
+    "features": [
+      "Conversation-based memory",
+      "Versioned corrections",
+      "Consent and privacy controls",
+      "Export, pause and deletion"
+    ],
+    "github": "https://github.com/logan9e7/HumanOS",
+    "releaseNote": "Repository documents 1.1.0 source awaiting publication; the deployed version may still be 1.0.0. Text scores are not clinical assessments.",
+    "roadmap": [
+      "Publish and verify current source",
+      "Evaluate inference quality",
+      "Complete signed-in acceptance"
+    ],
+    "featured": false
+  },
+  {
+    "id": 21,
+    "slug": "minime-lab",
+    "title": "MiniMe Lab",
+    "tagline": "A mobile learning companion for reproductive education.",
+    "description": "A reproductive-education project with separate web, backend and mobile source areas, exploring fertility and genetics learning.",
+    "category": "Education",
+    "status": "Building",
+    "version": "Development",
+    "year": 2026,
+    "problem": "Reproductive concepts need accessible explanations and clearly bounded educational tools.",
+    "solution": "Organise learning into focused screens and modules with transparent assumptions.",
+    "architecture": "The repository separates frontend, backend, mobile, database and documentation directories. Current release readiness needs a dedicated review.",
+    "technologies": [
+      "Mobile",
+      "Web",
+      "Python",
+      "Supabase"
+    ],
+    "features": [
+      "Reproductive education scope",
+      "Separate mobile source",
+      "Backend foundation",
+      "Genetics learning direction"
+    ],
+    "github": "https://github.com/logan9e7/MiniMe-Lab",
+    "releaseNote": "Source structure was reviewed. APK readiness, medical content validation and Play Store publication were not verified.",
+    "roadmap": [
+      "Refresh project documentation",
+      "Verify Android release",
+      "Review educational content"
+    ],
+    "featured": false
+  },
+  {
+    "id": 22,
+    "slug": "hypeframe",
+    "title": "Hypeframe",
+    "tagline": "Discover and save cinematic anime moments.",
+    "description": "An anime moments archive with search, spoiler controls, metadata integrations and an authenticated submission workflow in development.",
+    "category": "Software",
+    "status": "Building",
+    "version": "Community foundation",
+    "year": 2026,
+    "problem": "Finding memorable scenes needs useful metadata, spoiler handling and a clear review process.",
+    "solution": "Curated moment cards connect discovery with saved selections and moderated submissions.",
+    "architecture": "Next.js and TypeScript frontend, FastAPI metadata API and Supabase authentication/submission storage, with Netlify and Render deployment configuration.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "FastAPI",
+      "Supabase"
+    ],
+    "features": [
+      "Curated moment archive",
+      "Search and spoiler controls",
+      "Anime metadata adapters",
+      "Authenticated submissions"
+    ],
+    "github": "https://github.com/logan9e7/Hypeframe",
+    "releaseNote": "Documentation lists publication verification, moderation tooling and comment UI as incomplete. Saved moments and votes remain browser-local.",
+    "roadmap": [
+      "Verify auth deployment",
+      "Complete moderation tools",
+      "Unify durable submission storage"
+    ],
+    "featured": false
+  },
+  {
+    "id": 23,
+    "slug": "india-lens",
+    "title": "India Lens",
+    "tagline": "Understand India from the economy down to companies.",
+    "description": "A research product mapping macro drivers, sectors, industries and companies into a connected evidence trail.",
+    "category": "AI · Finance",
+    "status": "Building",
+    "version": "V0",
+    "year": 2026,
+    "problem": "Starting with a ticker can hide the economic mechanisms behind a company.",
+    "solution": "Start with country-level drivers and follow their effects through sectors and businesses.",
+    "architecture": "A Next.js application with documented Render hosting, Neon PostgreSQL persistence and AI research synthesis. Evidence-first research keeps facts separate from interpretation.",
+    "technologies": [
+      "Next.js",
+      "PostgreSQL",
+      "Neon",
+      "AI"
+    ],
+    "features": [
+      "India thesis dashboard",
+      "Sector map",
+      "Drivers and constraints",
+      "Evidence-first research"
+    ],
+    "github": "https://github.com/Immrtldragon98/india-lens",
+    "releaseNote": "Repository scope reviewed; current deployment and live research pipeline were not verified. Distinct from the earlier Market Lens concept.",
+    "roadmap": [
+      "Structured indicators",
+      "Source cards",
+      "Research ingestion and citations"
+    ],
+    "featured": false
   },
   ...[
     [13, "passing-game-mobile", "Passing Game Mobile", "A compact timing-and-skill mobile game.", "React Native · game prototype"],

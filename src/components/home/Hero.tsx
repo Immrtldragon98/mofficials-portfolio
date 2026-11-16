@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 import {
   completedProjects,
@@ -7,24 +8,28 @@ import {
 const areas = [
   {
     number: "01",
+    href: "/projects?category=Finance",
     title: "Crypto & Stocks",
     description:
       "Market tools, simulations, research and financial systems.",
   },
   {
     number: "02",
+    href: "/projects?category=AI",
     title: "AI Systems",
     description:
       "AI workflows, intelligent products and agentic systems.",
   },
   {
     number: "03",
-    title: "Manufacturing & Industrial Design",
+    href: "/projects?category=Industrial%20Software",
+    title: "Industrial Software",
     description:
-      "Engineering systems, industrial workflows, dashboards and design.",
+      "Asset history, maintenance workflows and reliability software.",
   },
   {
     number: "04",
+    href: "/projects?category=Software",
     title: "Software Engineering",
     description:
       "Web applications, mobile products, backends and complete digital systems.",
@@ -114,9 +119,10 @@ export default function Hero() {
             {/* Capability list */}
             <div className="flex-1">
               {areas.map((area) => (
-                <div
+                <Link
+                  href={area.href}
                   key={area.number}
-                  className="group border-b border-white/10 px-6 py-6 transition-colors hover:bg-white/[0.03] sm:px-8 lg:px-10"
+                  className="group block border-b border-white/10 px-6 py-6 transition-colors hover:bg-white/[0.03] sm:px-8 lg:px-10"
                 >
                   <div className="flex items-start gap-5">
                     <span className="font-mono text-[10px] text-white/55">
@@ -139,14 +145,14 @@ export default function Hero() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
             {/* Studio footer */}
             <div className="grid grid-cols-2 border-t border-white/10">
 
-              {/* Completed */}
+              {/* Built */}
               <div className="p-6">
                 <p className="font-mono text-3xl font-bold tracking-[-0.04em]">
                   {completedProjects.length
@@ -155,7 +161,7 @@ export default function Hero() {
                 </p>
 
                 <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-white/30">
-                  Completed
+                  Built
                 </p>
               </div>
 

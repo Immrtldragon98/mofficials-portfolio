@@ -5,7 +5,7 @@ export const featuredProjects = projects.filter(
 );
 
 export const completedProjects = projects.filter(
-  (project) => project.status === "Completed"
+  (project) => project.status === "Built"
 );
 
 export const buildingProjects = projects.filter(

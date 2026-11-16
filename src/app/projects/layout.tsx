@@ -6,8 +6,8 @@ export default function ProjectsLayout({
   children: ReactNode;
 }) {
   return (
-    <main className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       {children}
-    </main>
+    </div>
   );
 }
